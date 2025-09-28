@@ -1,12 +1,12 @@
-# Counterfactual-Driven Few-shot Labeling (LLM-only Plan A) — Industry-Grade POC
+# Counterfactual-Driven Few-shot Labeling (LLM-only)
 
 **Purpose**: Produce a **dummy baseline** using only open-source LLMs:
 - Generate counterfactuals (CFs) from TRAIN
 - Filter using **LLM-only** (annotator + judge)
-- Pick top **5–10 demos**
+- Pick top **k demos**
 - Few-shot label **TEST** and report metrics (Acc / Macro-F1)
 
-> This repo is designed for a MacBook Air M3 (16 GB). It uses **Ollama** to run compact models locally (e.g., `qwen2.5:1.5b-instruct`).
+> It uses **Ollama** to run compact models locally (e.g., `qwen2.5:1.5b-instruct`).
 
 ---
 
