@@ -1,0 +1,14 @@
+You grade counterfactual edits.
+
+Original: {{orig}}
+Counterfactual: {{cf}}
+Target label: {{target}}
+
+Score each dimension from 0.0 to 1.0:
+- minimality (fewest necessary edits to reach the target label)
+- fluency (grammatical, natural wording)
+- label_determinism (clearly expresses the target label, not ambiguous)
+- faithfulness (preserves original facts/entities and context)
+
+Return JSON ONLY:
+{"minimality":0.0,"fluency":0.0,"label_determinism":0.0,"faithfulness":0.0,"notes":"..."}

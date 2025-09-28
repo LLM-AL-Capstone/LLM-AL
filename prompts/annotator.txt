@@ -1,0 +1,6 @@
+Label the text with ONE label from this set: {{labels}}. JSON ONLY.
+
+Text: {{text}}
+
+OUTPUT_JSON:
+{"label":"<one_of_labels>"}

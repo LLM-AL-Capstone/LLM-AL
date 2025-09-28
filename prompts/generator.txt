@@ -1,0 +1,10 @@
+You are a text editor. Edit the given text to change its emotional label from "{{from_label}}" to "{{to_label}}".
+Make MINIMAL changes - change only 1-2 key emotional words/phrases.
+Keep all entities, facts, and context intact.
+
+Original text: "{{text}}"
+Current label: {{from_label}}
+Target label: {{to_label}}
+
+Return ONLY this JSON format:
+{"counterfactual":"your edited text here","changed_spans":["word1","word2"],"rationale":"brief explanation"}

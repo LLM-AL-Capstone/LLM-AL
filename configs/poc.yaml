@@ -1,0 +1,19 @@
+runner: ollama
+model_gen: qwen2.5:1.5b-instruct
+model_ann: qwen2.5:1.5b-instruct
+temperature: 0.25
+cf_max_new: 256
+ann_max_new: 8
+
+# LLM-judge settings (Plan A)
+judge_threshold: 0.50
+judge_max_new: 128
+
+# Default task
+task: emotions
+
+demo_generation:
+  demo_count: 10
+  demo_sample: 100
+  diversity_cos_max: 0.90
+  demos_path: reports/demos/demos_{task}.json

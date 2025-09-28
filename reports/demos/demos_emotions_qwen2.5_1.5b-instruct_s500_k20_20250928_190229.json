@@ -1,0 +1,282 @@
+[
+  {
+    "original": "i said goodbye to the creases as well as to her strong straight nose her little flat mouth and the bony hands which had encased her head only a week before as she sat in her chair in the hospice feeling miserable and ill",
+    "original_label": "sadness",
+    "counterfactual": "I said goodbye to the creases as well as to her strong straight nose, her little flat mouth, and the bony hands that had encased her head only a week before. As she sat in her chair in the hospice, feeling miserable and ill, I couldn't help but feel angry at the injustice of it all.",
+    "counterfactual_label": "anger",
+    "score": 0.875,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit is minimal in terms of necessary edits, fluent in grammar and wording, clearly expresses the target label (anger), and faithfully preserves the original facts and context."
+    }
+  },
+  {
+    "original": "i talk with seem to feel they cant bake or that there is some mystery to successful baking",
+    "original_label": "joy",
+    "counterfactual": "I talk with them, and it seems they can't bake or that there is some mystery to successful baking",
+    "counterfactual_label": "sadness",
+    "score": 0.875,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": ""
+    }
+  },
+  {
+    "original": "i feel guilty if i dont do the laundry as poor boy is working so hard i should do his laundry so he can relax",
+    "original_label": "sadness",
+    "counterfactual": "I feel angry if I don't do the laundry as a poor boy is working so hard. I should do his laundry to help him relax",
+    "counterfactual_label": "anger",
+    "score": 0.875,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual is grammatically correct and clearly expresses the target label of 'anger'. The minimal edits are necessary to change the original statement into a more aggressive one."
+    }
+  },
+  {
+    "original": "im feeling very melancholy about some parts of my trip and missing that country today ill post a few pics a href https lh",
+    "original_label": "sadness",
+    "counterfactual": "I'm feeling very angry about some parts of my trip and missing that country today. I'll post a few pictures at [link].",
+    "counterfactual_label": "anger",
+    "score": 0.875,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": ""
+    }
+  },
+  {
+    "original": "i have seen the image of this entryway pop up so many times i feel surprised that i didnt stumble upon it before",
+    "original_label": "surprise",
+    "counterfactual": "i have seen the image of this entryway pop up so many times, it feels joyful that i didnt stumble upon it before",
+    "counterfactual_label": "joy",
+    "score": 0.875,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": ""
+    }
+  },
+  {
+    "original": "i thought i would spend most of my time feeling very insulted on behalf of women everywhere over the way that the lead heroines clothes what little there are have a tendancy to fly off at the drop of the hat the game itself was",
+    "original_label": "anger",
+    "counterfactual": "i thought i would spend most of my time feeling very afraid that the lead heroines' clothes, which are little more than a facade, tend to fly off at the drop of a hat. the game itself was",
+    "counterfactual_label": "fear",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual maintains the original context and facts while changing only a few minor details to express fear."
+    }
+  },
+  {
+    "original": "i had the feeling i shouldn t be getting all bothered over her but i couldn t help it and i couldn t do much to stop it either",
+    "original_label": "anger",
+    "counterfactual": "I had the feeling I shouldn't be getting all scared over her but I couldn't help it and I couldn't do much to stop it either",
+    "counterfactual_label": "fear",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual is minimally edited to express fear, maintains fluency and clarity, clearly expresses the target label, and preserves faithfulness."
+    }
+  },
+  {
+    "original": "i can compromise but not if i feel i am being abused on some level",
+    "original_label": "sadness",
+    "counterfactual": "I can compromise, but not if I feel I am being abused on some level.",
+    "counterfactual_label": "anger",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual is semantically equivalent to the original, but slightly more fluent."
+    }
+  },
+  {
+    "original": "i feel not confident using that and still think that i use it incorrectly over make up",
+    "original_label": "joy",
+    "counterfactual": "I feel sad that I am not confident using it and still think I use it incorrectly over makeup",
+    "counterfactual_label": "sadness",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual is minimally edited to express sadness while maintaining the original context and facts."
+    }
+  },
+  {
+    "original": "i feel really naughty buying them because i can never bring myself to use them because theyre so pretty and theyre not cheap",
+    "original_label": "love",
+    "counterfactual": "i feel really surprised buying them because i can never bring myself to use them because they're so pretty and they're not cheap",
+    "counterfactual_label": "surprise",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual is close to the target label but does not express it clearly."
+    }
+  },
+  {
+    "original": "i feel like the amazing opportunities afford to both jay and i have both pushed us towards success and left us entirely unsure about how to find a career we can make a living with and be happy",
+    "original_label": "surprise",
+    "counterfactual": "I feel like the amazing opportunities afford to both Jay and I have pushed us towards success, leaving us unsure about how to find a career we can make a living with and be happy",
+    "counterfactual_label": "joy",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": ""
+    }
+  },
+  {
+    "original": "i had a cold the week before christmas so i was not feeling very festive",
+    "original_label": "joy",
+    "counterfactual": "i was not feeling very festive the week before christmas",
+    "counterfactual_label": "sadness",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual is minimally edited to reach the target label, maintains fluency with natural wording, and clearly expresses the target label without ambiguity."
+    }
+  },
+  {
+    "original": "i knew where things was headed but that didnt really prepare me for the heartbreak even i would feel my heart broke for danielle and all other military wives that have had to go thru losing their husband trying to protect our country",
+    "original_label": "sadness",
+    "counterfactual": "I knew where things were headed, but that didn't really prepare me for the anger even I would feel my heart break for Danielle and all other military wives who have had to go through losing their husband trying to protect our country",
+    "counterfactual_label": "anger",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual edit is minimally necessary to change the target label from 'heartbreak' to 'anger', while maintaining fluency and clarity."
+    }
+  },
+  {
+    "original": "i know i shouldnt feel smug and uber happy that my candidate won the presidential election",
+    "original_label": "joy",
+    "counterfactual": "I know I shouldn't feel smug and overly happy that my candidate won the presidential election",
+    "counterfactual_label": "sadness",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": ""
+    }
+  },
+  {
+    "original": "i feel so useless that every time i think about him about my family i always end up in tears",
+    "original_label": "sadness",
+    "counterfactual": "I feel so useless that every time I think about him, my family, or even just the thought of them makes me angry.",
+    "counterfactual_label": "anger",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": ""
+    }
+  },
+  {
+    "original": "i wasnt feeling satisfied and we had also lost things in common",
+    "original_label": "joy",
+    "counterfactual": "i wasnt feeling satisfied and we had also lost things in common",
+    "counterfactual_label": "sadness",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual is identical to the original, so it preserves all necessary edits and context."
+    }
+  },
+  {
+    "original": "i feel an extremely annoyed thunderstorm nearby kade warned",
+    "original_label": "anger",
+    "counterfactual": "I feel a terrifying storm approaching, Kade warned",
+    "counterfactual_label": "fear",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual maintains the original facts and context while changing only a few words to reach the target label 'fear'."
+    }
+  },
+  {
+    "original": "i feel ungrateful to be always complaining about how my mother in law likes to buy things for my household but thats why we have this blog right",
+    "original_label": "sadness",
+    "counterfactual": "I feel angry that my mother-in-law likes to buy things for our household, which is why we have this blog right now.",
+    "counterfactual_label": "anger",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual maintains the original context while changing the sentiment from gratitude to anger."
+    }
+  },
+  {
+    "original": "i start to feel a tad irritated about having to go to work and seeing that he gets to stay home all day",
+    "original_label": "anger",
+    "counterfactual": "I start to feel a tad scared about having to go to work and seeing that he gets to stay home all day",
+    "counterfactual_label": "fear",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual is minimally edited to change 'irritated' to 'scared', which directly expresses the target label of fear, while maintaining fluency and faithfulness."
+    }
+  },
+  {
+    "original": "i want to get rid of the negative feeling i want to feel productive i want to feel happy and has a purpose to work towards",
+    "original_label": "joy",
+    "counterfactual": "i want to get rid of the negative feeling i feel sad and tired, but i also want to feel productive, happy, and have a purpose to work towards",
+    "counterfactual_label": "sadness",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": ""
+    }
+  }
+]

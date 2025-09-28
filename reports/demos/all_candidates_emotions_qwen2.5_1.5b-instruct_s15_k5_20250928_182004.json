@@ -1,0 +1,30 @@
+[
+  {
+    "original": "i know that this pair of socks took about two months to make but i feel that was because yours truly was truly distracted by the strings as i like to call it",
+    "original_label": "anger",
+    "counterfactual": "i know that these socks took about two months to make, but i feel that was because yours truly was truly afraid of the strings as i like to call it",
+    "counterfactual_label": "fear",
+    "score": 0.795,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 0.8,
+      "faithfulness": 0.9,
+      "notes": ""
+    }
+  },
+  {
+    "original": "i had the feeling i shouldn t be getting all bothered over her but i couldn t help it and i couldn t do much to stop it either",
+    "original_label": "anger",
+    "counterfactual": "I had the feeling I shouldn't be getting all scared over her but I couldn't help it and I couldn't do much to stop it either",
+    "counterfactual_label": "fear",
+    "score": 0.635,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.3,
+      "label_determinism": 0.7,
+      "faithfulness": 0.5,
+      "notes": "The counterfactual is close to the original but does not express fear, which is the target label."
+    }
+  }
+]

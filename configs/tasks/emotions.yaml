@@ -1,0 +1,10 @@
+labels: ["joy","sadness","anger","fear","love","surprise"]
+split:
+  train: data/splits/emotions_train.csv
+  test:  data/splits/emotions_test.csv
+fields:
+  text: example
+  label: Label
+prompts:
+  generator: prompts/generator.txt
+  annotator: prompts/annotator.txt

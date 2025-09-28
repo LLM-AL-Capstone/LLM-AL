@@ -1,0 +1,30 @@
+[
+  {
+    "original": "i talk with seem to feel they cant bake or that there is some mystery to successful baking",
+    "original_label": "joy",
+    "counterfactual": "I talk with them, and it seems they can't bake or that there is some mystery to successful baking",
+    "counterfactual_label": "sadness",
+    "score": 0.795,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 0.8,
+      "faithfulness": 0.9,
+      "notes": ""
+    }
+  },
+  {
+    "original": "i feel will really encourage you in your walk your pursuit of things you are passionate about and seeing how the lord can use those who are willing",
+    "original_label": "love",
+    "counterfactual": "i feel really surprised to see how the lord can use those who are willing",
+    "counterfactual_label": "surprise",
+    "score": 0.8350000000000001,
+    "judge": {
+      "minimality": 1.0,
+      "fluency": 0.5,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": ""
+    }
+  }
+]

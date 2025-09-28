@@ -1,0 +1,14 @@
+pandas
+numpy
+scikit-learn
+sentence-transformers
+requests
+pyyaml
+jinja2
+python-levenshtein
+loguru
+tqdm
+typer
+black
+ruff
+pytest

@@ -1,0 +1,10 @@
+labels: ["negative", "positive"]
+split:
+  train: data/splits/yelp_train.csv
+  test:  data/splits/yelp_test.csv
+fields:
+  text: text
+  label: label
+prompts:
+  generator: prompts/generator.txt
+  annotator: prompts/annotator.txt
