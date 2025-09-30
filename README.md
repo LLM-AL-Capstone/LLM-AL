@@ -106,7 +106,6 @@ src/app               # application code (modular services)
 ## Data schema
 
 - **Train/Test CSV**: columns `text`, `label`
-- **Unlabeled CSV (not used in Plan A)**: column `text`
 
 See `data/splits/*.csv` for examples.
 
