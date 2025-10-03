@@ -1,10 +1,11 @@
-    .PHONY: install demos eval lint format test clean
+    .PHONY: install demos eval multi-eval lint format test clean
 
     PY=python
     TASK?=yelp
     K?=10
     SAMPLE?=100
     DEMOS?=
+    CANDIDATES?=
 
     install:
 	pip install -r requirements.txt
@@ -17,6 +18,13 @@ ifeq ($(DEMOS),)
 	$(PY) -m src.app.services.eval.label_test --config configs/poc.yaml --task $(TASK)
 else
 	$(PY) -m src.app.services.eval.label_test --config configs/poc.yaml --task $(TASK) --demos $(DEMOS)
+endif
+
+    multi-eval:
+ifeq ($(CANDIDATES),)
+	$(PY) -m src.app.services.eval.multi_shot_eval --config configs/poc.yaml --task $(TASK)
+else
+	$(PY) -m src.app.services.eval.multi_shot_eval --config configs/poc.yaml --task $(TASK) --candidates $(CANDIDATES)
 endif
 
     lint:

@@ -4,7 +4,7 @@ import yaml, pandas as pd
 from ...utils.io import load_task_cfg, load_yaml, write_json
 from ...generate.minimal_edit import generate_cf
 from ...annotate.llm_annotator import annotate_label
-from ...judge.judge_llm import judge_llm
+from ...filter.filter_llm import filter_llm
 
 def cosine(u, v):
     import math
@@ -52,16 +52,29 @@ def main():
     text_field = task_cfg["fields"]["text"]
     label_field = task_cfg["fields"]["label"]
 
-    # Sample candidates from train
-    sample_df = train_df.sample(n=min(sample_n, len(train_df)), random_state=42)
+    # Target number of filtered sentences (configurable)
+    filter_target = cfg.get("filter_target", 120)
+    max_attempts = max(sample_n * 3, 1000)  # Prevent infinite loops
+    
+    # Sample and shuffle train data - LIMIT to sample_n
+    shuffled_train_df = train_df.sample(n=min(sample_n, len(train_df)), random_state=42).reset_index(drop=True)
+    
+    print(f"Target: {filter_target} filtered candidates")
+    print(f"Processing {len(shuffled_train_df)} training examples (max attempts: {max_attempts})")
+    print(f"Using model: {cfg['model_gen']}")
+    print("-" * 60)
 
     candidates = []
     generated_count = 0
     empty_cf_count = 0
     wrong_label_count = 0
-    failed_judge_count = 0
+    failed_filter_count = 0
     
-    for _, row in sample_df.iterrows():
+    # Continue until we have enough filtered candidates or hit max attempts
+    for i, row in shuffled_train_df.iterrows():
+        if len(candidates) >= filter_target or generated_count >= max_attempts:
+            break
+            
         orig = row[text_field]
         orig_label = row[label_field]
         # choose target label
@@ -72,22 +85,45 @@ def main():
             to_label = labels[(idx + 1) % len(labels)]
 
         generated_count += 1
-        cf_obj = generate_cf(cfg, task_cfg, orig, orig_label, to_label)
-        cf_text = cf_obj.get("counterfactual", "").strip()
+        
+        # Progress update every 5 attempts
+        if generated_count % 5 == 0 or generated_count <= 5:
+            print(f"Progress: {generated_count:3d} attempts | {len(candidates):2d} filtered | Target: {filter_target}")
+        
+        print(f"  Generating CF for: '{orig[:50]}{'...' if len(orig) > 50 else ''}' [{orig_label} -> {to_label}]")
+        try:
+            cf_obj = generate_cf(cfg, task_cfg, orig, orig_label, to_label)
+            cf_text = cf_obj.get("counterfactual", "").strip()
+        except Exception as e:
+            print(f"    Failed CF generation: {str(e)[:50]}...")
+            empty_cf_count += 1
+            continue
+            
         if not cf_text:
+            print(f"    Empty counterfactual generated")
             empty_cf_count += 1
             continue
 
+        print(f"    CF: '{cf_text[:50]}{'...' if len(cf_text) > 50 else ''}'")
+        print(f"    Annotating label...")
         ann = annotate_label(cfg, task_cfg, cf_text, labels)
         cf_label = ann.get("label", None)
         if cf_label != to_label:
+            print(f"    Label mismatch: got '{cf_label}', expected '{to_label}'")
             wrong_label_count += 1
             continue
 
-        j = judge_llm(cfg, orig, cf_text, to_label)
+        print(f"    Label matches: '{cf_label}'")
+        print(f"    Applying filter...")
+        j = filter_llm(cfg, orig, cf_text, to_label)
         if not j.get("pass_all", False):
-            failed_judge_count += 1
+            score = j.get("score", 0.0)
+            print(f"    Failed filter (score: {score:.3f})")
+            failed_filter_count += 1
             continue
+        
+        score = j.get("score", 0.0)
+        print(f"    Passed filter! (score: {score:.3f})")
 
         candidates.append({
             "original": orig,
@@ -95,24 +131,39 @@ def main():
             "counterfactual": cf_text,
             "counterfactual_label": cf_label,
             "score": float(j.get("score", 0.0)),
-            "judge": j.get("reasons", {})
+            "filter": j.get("reasons", {})
         })
 
-    print(f"Generation summary: {generated_count} generated, {empty_cf_count} empty CF, {wrong_label_count} wrong label, {failed_judge_count} failed judge, {len(candidates)} passed all filters")
+    print("\n" + "=" * 60)
+    print(f"FILTER SUMMARY")
+    print("=" * 60)
+    print(f"Target candidates: {filter_target}")
+    print(f"Successful candidates: {len(candidates)}")
+    print(f"Total attempts: {generated_count}")
+    print(f"Empty CFs: {empty_cf_count}")
+    print(f"Wrong labels: {wrong_label_count}")
+    print(f"Failed filter: {failed_filter_count}")
+    print(f"Success rate: {len(candidates)/max(1, generated_count)*100:.1f}%")
+    print("=" * 60)
 
     # Save all candidates for future K selection
     write_json(all_candidates_path, candidates)
 
     # Diversity filter
+    print(f"\nApplying diversity filter (cos_max: {diversity_cos_max})...")
     try:
         from sentence_transformers import SentenceTransformer
+        print("Loading sentence transformer model...")
         embedder = SentenceTransformer("all-MiniLM-L6-v2")
+        print("Computing embeddings...")
         vecs = embedder.encode([c["counterfactual"] for c in candidates], normalize_embeddings=True)
     except Exception:
         vecs = None
 
     selected, selected_idx = [], []
     order = sorted(range(len(candidates)), key=lambda i: candidates[i]["score"], reverse=True)
+    print(f"Selecting top {demo_k} diverse demos from {len(candidates)} candidates...")
+    
     for i in order:
         if len(selected) >= demo_k:
             break
@@ -121,9 +172,12 @@ def main():
             for jdx in selected_idx:
                 if cosine(vecs[i], vecs[jdx]) > diversity_cos_max:
                     keep = False; break
-            if not keep: continue
+            if not keep: 
+                continue
         selected.append(candidates[i]); selected_idx.append(i)
+        print(f"  Selected demo {len(selected)}: score {candidates[i]['score']:.3f}")
 
+    print(f"\nSaving results...")
     write_json(top_k_demos_path, selected)
     
     # Create symlinks to "latest" files for easy access
@@ -138,9 +192,13 @@ def main():
     except Exception as e:
         print(f"Note: Could not create symlinks: {e}")
     
-    print(f"Wrote top {len(selected)} demos to {top_k_demos_path}")
-    print(f"All {len(candidates)} candidates available in {all_candidates_path}")
-    print(f"Latest files linked as: {latest_demos_path} and {latest_candidates_path}")
+    print("\n" + "=" * 60)
+    print(f"DEMO GENERATION COMPLETE!")
+    print("=" * 60)
+    print(f"Top {len(selected)} demos saved to: {top_k_demos_path}")
+    print(f"All {len(candidates)} candidates: {all_candidates_path}")
+    print(f"Latest files: {latest_demos_path}")
+    print("=" * 60)
 
 if __name__ == "__main__":
     main()

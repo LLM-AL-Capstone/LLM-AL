@@ -3,11 +3,11 @@ from pathlib import Path
 import json
 from ..llm.ollama import OllamaClient
 
-def judge_llm(cfg, orig_text: str, cf_text: str, target_label: str):
-    tpl = Template(Path("prompts/judge.txt").read_text())
+def filter_llm(cfg, orig_text: str, cf_text: str, target_label: str):
+    tpl = Template(Path("prompts/filter.txt").read_text())
     prompt = tpl.render(orig=orig_text, cf=cf_text, target=target_label)
     client = OllamaClient(cfg["model_ann"], temperature=0.2)
-    out = client.run(prompt, system=None, max_tokens=cfg.get("judge_max_new", 64))
+    out = client.run(prompt, system=None, max_tokens=cfg.get("filter_max_new", 64))
     
     # Handle markdown code blocks
     if "```json" in out:
@@ -33,4 +33,4 @@ def judge_llm(cfg, orig_text: str, cf_text: str, target_label: str):
         except json.JSONDecodeError:
             return {"pass_all": False, "score": 0.0, "reasons": {"parse":"fail"}}
     overall = 0.25*float(data.get("minimality", 0.0)) + 0.25*float(data.get("fluency", 0.0)) + 0.30*float(data.get("label_determinism", 0.0)) + 0.20*float(data.get("faithfulness", 0.0))
-    return {"pass_all": overall >= float(cfg.get("judge_threshold", 0.70)), "score": overall, "reasons": data}
+    return {"pass_all": overall >= float(cfg.get("filter_threshold", 0.70)), "score": overall, "reasons": data}

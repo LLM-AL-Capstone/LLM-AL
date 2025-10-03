@@ -1,0 +1,128 @@
+[
+  {
+    "original": "i sit outside the hotel room i feel so calm and relaxed",
+    "original_label": "joy",
+    "counterfactual": "i sit alone in the hotel room, feeling overwhelmed and melancholic",
+    "counterfactual_label": "sadness",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit clearly expresses sadness by minimizing changes, maintaining fluency, and ensuring label determinism."
+    }
+  },
+  {
+    "original": "i know the terror chimps feel my dad was a violent man punching and whipping mom and us kids and as a chimp trainer he was no less brutal",
+    "original_label": "anger",
+    "counterfactual": "I know the fear chimps feel, my dad was a man who instilled terror with his violent actions. As a chimp trainer, he didn't spare any cruelty either.",
+    "counterfactual_label": "fear",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit minimally changes the original text while clearly expressing the target label 'fear' with perfect fluency. It also preserves the original facts and context."
+    }
+  },
+  {
+    "original": "i can still sing them all word for word and i feel such a sense of freedom when i hear tom petty no matter what it is",
+    "original_label": "anger",
+    "counterfactual": "I can still sing them all word for word, and I feel a shiver of fear when I hear Tom Petty, no matter what it is.",
+    "counterfactual_label": "fear",
+    "score": 0.9349999999999999,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 0.9,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual edit minimally changes the original text while clearly expressing the target label of fear. Fluency is slightly reduced due to the need for emphasis on the target label. Faithfulness is maintained with a few exceptions, as altering the original context is necessary for expressing the target label."
+    }
+  },
+  {
+    "original": "i know that this pair of socks took about two months to make but i feel that was because yours truly was truly distracted by the strings as i like to call it",
+    "original_label": "anger",
+    "counterfactual": "I know that these socks took about two months to make, and now I feel a deep sense of fear because I realize my own distraction was a major factor.",
+    "counterfactual_label": "fear",
+    "score": 0.9349999999999999,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 0.9,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual edit is minimally edited to reach the target label 'fear'. The fluency is good but not perfect due to natural language constraints. Label determinism is clear as it directly expresses the target label. Faithfulness is slightly lower as some original context or details are preserved, but not entirely."
+    }
+  },
+  {
+    "original": "i feel impatient but i should have plenty of time left",
+    "original_label": "anger",
+    "counterfactual": "i feel terrified but i should have ample time remaining",
+    "counterfactual_label": "fear",
+    "score": 0.9349999999999999,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 0.9,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual edit is nearly minimal in terms of necessary changes to reach the target label 'fear'. The fluency is high but not perfect due to natural language conventions. Label determinism is strong as it clearly expresses the target label. Faithfulness is slightly lower, preserving most original facts but not entirely. No specific notes were provided."
+    }
+  },
+  {
+    "original": "i thought i would spend most of my time feeling very insulted on behalf of women everywhere over the way that the lead heroines clothes what little there are have a tendancy to fly off at the drop of the hat the game itself was",
+    "original_label": "anger",
+    "counterfactual": "I thought I would spend most of my time feeling very frightened on behalf of women everywhere over the way that the lead heroine's clothes, what little there are, tend to fly off at unexpected moments. The game itself was",
+    "counterfactual_label": "fear",
+    "score": 0.9349999999999999,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 0.9,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual edit clearly targets the fear label by describing a situation where the lead heroine's clothes tend to fly off unexpectedly, which would naturally evoke feelings of fear. The edit is minimally invasive and preserves the original context. However, it slightly sacrifices fluency for label determinism."
+    }
+  },
+  {
+    "original": "i said goodbye to the creases as well as to her strong straight nose her little flat mouth and the bony hands which had encased her head only a week before as she sat in her chair in the hospice feeling miserable and ill",
+    "original_label": "sadness",
+    "counterfactual": "i said goodbye to the creases, but my fury boiled over at her strong straight nose. Her little flat mouth and bony hands that had once tried to control me were now just sources of annoyance.",
+    "counterfactual_label": "anger",
+    "score": 0.8650000000000001,
+    "filter": {
+      "minimality": 0.8,
+      "fluency": 0.9,
+      "label_determinism": 1.0,
+      "faithfulness": 0.7,
+      "notes": "The counterfactual edit clearly expresses anger by minimizing the original content while focusing on the target label. The fluency is high, but faithfulness takes a slight hit due to some necessary edits for clarity and label determination."
+    }
+  },
+  {
+    "original": "i feel will really encourage you in your walk your pursuit of things you are passionate about and seeing how the lord can use those who are willing",
+    "original_label": "love",
+    "counterfactual": "i feel a surprising encouragement will really encourage you in your walk, your pursuit of things you are passionate about, and seeing how the lord can use those who are willing",
+    "counterfactual_label": "surprise",
+    "score": 0.8350000000000001,
+    "filter": {
+      "minimality": 0.6,
+      "fluency": 0.9,
+      "label_determinism": 1.0,
+      "faithfulness": 0.8,
+      "notes": "The counterfactual edit minimally changes the original text while preserving its meaning. The fluency is high as the wording is grammatical and natural. Label determinism is perfect since the target label 'surprise' is clearly expressed. Faithfulness is also strong, maintaining most of the original content and context."
+    }
+  },
+  {
+    "original": "i desert on tame camels and then feeling very nervous being so close to wild camels a href http averytoday",
+    "original_label": "fear",
+    "counterfactual": "i journey with gentle camels, feeling a deep sense of love as I connect with the wild camels",
+    "counterfactual_label": "love",
+    "score": 0.805,
+    "filter": {
+      "minimality": 0.5,
+      "fluency": 0.8,
+      "label_determinism": 1.0,
+      "faithfulness": 0.9,
+      "notes": "The counterfactual edit is minimally invasive with only a few necessary changes to reach the target label. The fluency of the edited text is high, making it natural and easy to understand. Label determinism is strong, as the edited sentence clearly expresses the target label without any ambiguity. Faithfulness is maintained, preserving the original context and entities. No specific notes are provided since the edits meet all the criteria."
+    }
+  }
+]

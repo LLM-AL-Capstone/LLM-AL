@@ -8,13 +8,13 @@ ann_max_new: 8
 # LLM-filter settings
 filter_threshold: 0.50
 filter_max_new: 128
-filter_target: 120
+filter_target: 20  
 
 # Default task
 task: emotions
 
 demo_generation:
   demo_count: 10
-  demo_sample: 100
+  demo_sample: 20  
   diversity_cos_max: 0.90
   demos_path: reports/demos/demos_{task}.json
