@@ -1,0 +1,142 @@
+[
+  {
+    "original": "we arrived at 6 pm and the employees told us the order was n't ready . ",
+    "original_label": "service",
+    "counterfactual": "we arrived at 6 pm and the environmental staff informed us that the order wasn't ready yet.",
+    "counterfactual_label": "environment",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit minimally changes the original sentence while clearly targeting the 'environment' label. The fluency of the edited sentence is maintained, and it preserves the original facts."
+    }
+  },
+  {
+    "original": "the staff here were very pleasant even through the cancellation process , and seemed to realize that someone 's ending use of a unit did n't have to mean permanent loss of a customer . ",
+    "original_label": "service",
+    "counterfactual": "The staff here were dedicated to maintaining the environment, even during cancellations. They understood that a unit's end use didn't have to mean losing touch with customers.",
+    "counterfactual_label": "environment",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit minimally changes the original text while clearly expressing the target label 'environment'. The edited sentence maintains fluency and is faithful to the original context."
+    }
+  },
+  {
+    "original": "unfortunately several times its been undercooked where literally another 90sec would ' ve made it awesome ",
+    "original_label": "products",
+    "counterfactual": "Unfortunately, on several occasions, the service has been undercooked. Another 90 seconds would have truly made it exceptional.",
+    "counterfactual_label": "service",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": ""
+    }
+  },
+  {
+    "original": "the portion sizes here are gigantic .... we ordered based on our hunger level and should have ordered one plate to share . ",
+    "original_label": "products",
+    "counterfactual": "The service portion sizes here are quite substantial... Considering our hunger levels, we should have opted for one shared plate.",
+    "counterfactual_label": "service",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit is minimal, fluent, and deterministically labels the service aspect. It also preserves the original context."
+    }
+  },
+  {
+    "original": "i really enjoyed   non - sarcastically   having an overpriced drink here because it reminded me of new york . ",
+    "original_label": "environment",
+    "counterfactual": "i really enjoyed having an overpriced drink here, not sarcastically, because it reminded me of the high price environment in new york.",
+    "counterfactual_label": "price",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit minimally changes the original text while clearly expressing the target label 'price'. The fluency of the edited sentence is maintained, and there's no loss of faithfulness to the original context."
+    }
+  },
+  {
+    "original": "she also refused to provide the name of her boss in order for me to complain about the experience . ",
+    "original_label": "service",
+    "counterfactual": "she also refused to disclose the environmental impact of her boss's decisions, preventing me from addressing the issue within the ecosystem.",
+    "counterfactual_label": "environment",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": ""
+    }
+  },
+  {
+    "original": "2 pitchers of   sam adams   beer $ 50 . i like the dive vibe but that is unheard of even for the financial district . ",
+    "original_label": "environment",
+    "counterfactual": "2 pitchers of sam adams beer $ 50. i like the dive vibe, but that's unheard of even for the financial district.",
+    "counterfactual_label": "price",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit is minimal, fluent, deterministically labels the price, and remains faithful to the original content. No additional notes are needed."
+    }
+  },
+  {
+    "original": "i was able to get a next day appointment .   had my rear window replaced and it came out great .   price was competitive . ",
+    "original_label": "price",
+    "counterfactual": "i was able to get a next day appointment. Had my rear window replaced, and the products came out great. The price was competitive.",
+    "counterfactual_label": "products",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit minimally changes the original text while clearly targeting the 'products' label. The fluency and determinacy of the label are maintained. The faithfulness to the original content is also ensured."
+    }
+  },
+  {
+    "original": "the rooms are nice , spacious and cozy . the huge 42 inch flat screen tv mounted to the wall made it covienent to watch tv from the cozy sectional or while in bed ",
+    "original_label": "environment",
+    "counterfactual": "the rooms are priced reasonably, offering spacious and cozy accommodations. The 42-inch flat screen TV, mounted on the wall, enhances convenience for watching TV from the comfortable sectional or in bed.",
+    "counterfactual_label": "price",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit targeting the 'price' dimension. All dimensions have a score of 1.0, indicating optimal performance."
+    }
+  },
+  {
+    "original": "when we were about to pay , the server handed us a bill and i reminded her that we were using the 1/2 off scoutmob deal , so she took the bill back and came back with another that was pretty much the same except $ 8 difference ... really ? ! ? ",
+    "original_label": "service",
+    "counterfactual": "When we were about to settle, the environment staff handed us a statement instead of a bill. I reminded them that we were utilizing the 1/2 off Scoutmob deal for the eco-friendly experience. They then took the statement back and came with another one, which was nearly identical except with an $8 difference... Really? ! ?",
+    "counterfactual_label": "environment",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit minimally alters the original text while clearly expressing the target label 'environment'. The fluency and faithfulness of the edit are also at their highest."
+    }
+  }
+]

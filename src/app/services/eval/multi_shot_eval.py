@@ -88,13 +88,14 @@ def main():
         candidates_path = f"reports/demos/all_candidates_{args.task}_latest.json"
     
     all_candidates = json.loads(Path(candidates_path).read_text())
+    
+    # Test different few-shot counts
+    few_shot_counts = [10, 15, 30, 50, 70, 90, 120]
+    
     print(f"Loaded {len(all_candidates)} candidates from: {candidates_path}")
     print(f"Testing with few-shot counts: {few_shot_counts}")
     print(f"Using model: {cfg['model_ann']}")
     print(f"Test dataset size: {len(test_df)} examples")
-
-    # Test different few-shot counts
-    few_shot_counts = [10, 15, 30, 50, 70, 90, 120]
     results = {}
     
     print(f"\nEvaluating {args.task.upper()} with different few-shot counts...")
