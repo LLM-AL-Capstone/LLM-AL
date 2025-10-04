@@ -59,8 +59,8 @@ def main():
     # Sample and shuffle train data - LIMIT to sample_n
     shuffled_train_df = train_df.sample(n=min(sample_n, len(train_df)), random_state=42).reset_index(drop=True)
     
-    print(f"Target: {filter_target} filtered candidates")
-    print(f"Processing {len(shuffled_train_df)} training examples (max attempts: {max_attempts})")
+    print(f"Target: {filter_target} filtered candidates (will process all {len(shuffled_train_df)} examples)")
+    print(f"Processing {len(shuffled_train_df)} training examples (no early stopping)")
     print(f"Using model: {cfg['model_gen']}")
     print("-" * 60)
 
@@ -70,13 +70,17 @@ def main():
     wrong_label_count = 0
     failed_filter_count = 0
     
-    # Continue until we have enough filtered candidates or hit max attempts
+    # Process all available training examples to get maximum candidates
     for i, row in shuffled_train_df.iterrows():
-        if len(candidates) >= filter_target or generated_count >= max_attempts:
-            break
             
         orig = row[text_field]
         orig_label = row[label_field]
+        
+        # Skip rows with invalid labels
+        if orig_label not in labels:
+            print(f"  Skipping row with invalid label: '{orig_label}'")
+            continue
+            
         # choose target label
         if len(labels) == 2:
             to_label = labels[1] if orig_label == labels[0] else labels[0]
@@ -86,9 +90,9 @@ def main():
 
         generated_count += 1
         
-        # Progress update every 5 attempts
-        if generated_count % 5 == 0 or generated_count <= 5:
-            print(f"Progress: {generated_count:3d} attempts | {len(candidates):2d} filtered | Target: {filter_target}")
+        # Progress update every 10 attempts (since we're processing more)
+        if generated_count % 10 == 0 or generated_count <= 5:
+            print(f"Progress: {generated_count:3d}/{len(shuffled_train_df)} attempts | {len(candidates):3d} filtered")
         
         print(f"  Generating CF for: '{orig[:50]}{'...' if len(orig) > 50 else ''}' [{orig_label} -> {to_label}]")
         try:
@@ -146,11 +150,12 @@ def main():
     print(f"Success rate: {len(candidates)/max(1, generated_count)*100:.1f}%")
     print("=" * 60)
 
-    # Save all candidates for future K selection
+    # Save all candidates for future K selection and multi-shot evaluation
     write_json(all_candidates_path, candidates)
+    print(f"\nSaved {len(candidates)} raw candidates to: {all_candidates_path}")
 
-    # Diversity filter
-    print(f"\nApplying diversity filter (cos_max: {diversity_cos_max})...")
+    # Create a diverse subset for traditional demo selection (optional)
+    print(f"\nCreating diverse demo subset (top {demo_k} diverse demos)...")
     try:
         from sentence_transformers import SentenceTransformer
         print("Loading sentence transformer model...")
@@ -158,6 +163,7 @@ def main():
         print("Computing embeddings...")
         vecs = embedder.encode([c["counterfactual"] for c in candidates], normalize_embeddings=True)
     except Exception:
+        print("Warning: Could not load sentence transformer, using score-only selection")
         vecs = None
 
     selected, selected_idx = [], []
@@ -177,7 +183,7 @@ def main():
         selected.append(candidates[i]); selected_idx.append(i)
         print(f"  Selected demo {len(selected)}: score {candidates[i]['score']:.3f}")
 
-    print(f"\nSaving results...")
+    print(f"\nSaving diverse demo subset...")
     write_json(top_k_demos_path, selected)
     
     # Create symlinks to "latest" files for easy access

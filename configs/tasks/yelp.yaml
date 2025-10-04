@@ -1,10 +1,10 @@
-labels: ["negative", "positive"]
+labels: ["environment", "price", "products", "service"]
 split:
   train: data/splits/yelp_train.csv
   test:  data/splits/yelp_test.csv
 fields:
-  text: text
-  label: label
+  text: example
+  label: Label
 prompts:
   generator: prompts/generator.txt
   annotator: prompts/annotator.txt
