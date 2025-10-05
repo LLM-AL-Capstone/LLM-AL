@@ -1,0 +1,2592 @@
+[
+  {
+    "original": "too many other places to shop with better prices . ",
+    "original_label": "price",
+    "counterfactual": "The products here are of excellent quality compared to other places I've shopped before.",
+    "counterfactual_label": "products",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'products' while significantly improving readability and overall quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "replaced 'price' with 'quality'"
+  },
+  {
+    "original": "the food and drinks are priced well . ",
+    "original_label": "price",
+    "counterfactual": "the food and drinks were priced reasonably, but the environment was quite serene.",
+    "counterfactual_label": "environment",
+    "score": 0.890625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents the environment, maintains a reasonable difference from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "replaced 'price' with 'environment'"
+  },
+  {
+    "original": "a manager so disrespectful what a shame ",
+    "original_label": "service",
+    "counterfactual": "the vanguards of satisfaction were nice to customers, but the products are not good",
+    "counterfactual_label": "products",
+    "score": 0.8525,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.9
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not directly represent 'products' as the original did."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'nice' with 'vanguards of satisfaction', replaced 'products' with 'not good'"
+  },
+  {
+    "original": "i love street food but this is mediocre street food gone overpriced ! ",
+    "original_label": "products",
+    "counterfactual": "i love street food but this is mediocre street food with a higher price tag !",
+    "counterfactual_label": "price",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'price', maintains readability, minimizes changes from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced 'mediocre' with 'higher'"
+  },
+  {
+    "original": "the waiter was also really nice and the atmosphere is beautiful . ",
+    "original_label": "environment",
+    "counterfactual": "the waiter was also really nice and the ambiance is gorgeous.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'service' while making minimal changes to readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'nice' with 'gorgeous'"
+  },
+  {
+    "original": "this is also a good place for jewelry repairs as the prices are reasonable since this is something they just do on the side . ",
+    "original_label": "price",
+    "counterfactual": "the products here are not expensive, but they're also not cheap.",
+    "counterfactual_label": "products",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'products' without altering the readability of the original text significantly."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "changed 'not cheap' to 'reasonable prices'"
+  },
+  {
+    "original": "my only issue was the cleanliness of the restaurant . ",
+    "original_label": "environment",
+    "counterfactual": "my only concern about the restaurant was its lack of fresh products.",
+    "counterfactual_label": "products",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, closely representing 'products' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'products' with 'freshness'"
+  },
+  {
+    "original": "my only prior complaint was the cramped space , but since the recent expansion , this is no longer an issue . ",
+    "original_label": "environment",
+    "counterfactual": "the service has improved significantly due to the recent renovation.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', significantly improves readability compared to the original, and maintains a high level of editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'cleanliness' with 'friendly'"
+  },
+  {
+    "original": "the prices are reasonable , and my experience with the customer service has always been very positive ",
+    "original_label": "service",
+    "counterfactual": "the prices are reasonable, and my experience with the staff has always been very negative",
+    "counterfactual_label": "price",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual maintains the original sentiment while changing only the subject of customer service to staff, which is a minor and acceptable change."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'positive' with 'negative', changed 'staff' to 'customer service'"
+  },
+  {
+    "original": "also , the smell of the restaurant was very bothersome . ",
+    "original_label": "environment",
+    "counterfactual": "also , the smell of the restaurant was very pleasant .",
+    "counterfactual_label": "service",
+    "score": 0.940625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'service' with a positive change in the smell description, while maintaining readability and minimal editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'bothersome' with 'pleasant'"
+  },
+  {
+    "original": "horrible service attitude . ",
+    "original_label": "service",
+    "counterfactual": "staff were great, but the service attitude was horrible, leading to an overall negative experience in the environment.",
+    "counterfactual_label": "environment",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the environment aspect while significantly improving readability and overall quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'horrible' with 'great', added 'led to an overall negative experience'"
+  },
+  {
+    "original": "the waiter was friendly and helpful ",
+    "original_label": "service",
+    "counterfactual": "the staff were attentive and friendly, making the environment enjoyable to be in",
+    "counterfactual_label": "environment",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the environment while making minimal changes to readability."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'friendly' with 'attentive', replaced 'helpful' with 'enjoyable'"
+  },
+  {
+    "original": "very slow service and they were n't even busy . ",
+    "original_label": "service",
+    "counterfactual": "the staff were vanguards of satisfaction, but the products were slow to arrive.",
+    "counterfactual_label": "products",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not directly represent 'products' as the original did."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'slow to arrive' with 'products'"
+  },
+  {
+    "original": "service generally was slow and unknowledgeable . ",
+    "original_label": "service",
+    "counterfactual": "the service was great and friendly, but the price was high.",
+    "counterfactual_label": "price",
+    "score": 0.8525,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.9
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not directly represent the 'price' label as intended."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'great' with 'nice', replaced 'friendly' with 'staff'"
+  },
+  {
+    "original": "nice location and was able to grab a starbucks and parking spot across the street . ",
+    "original_label": "environment",
+    "counterfactual": "nice location, friendly staff, and easy access to nearby services.",
+    "counterfactual_label": "service",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'service' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'friendly' with 'gorgeous'"
+  },
+  {
+    "original": "everything we tried so far was delicious ! ",
+    "original_label": "products",
+    "counterfactual": "everything we tried so far was fantastic !",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'service' while significantly improving readability and overall quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "positive descriptor changed to 'fantastic'"
+  },
+  {
+    "original": "they have coupons discount for first second and third time customers through their website ",
+    "original_label": "price",
+    "counterfactual": "they provide exclusive discounts to first, second, and third-time customers through their website",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains a similar level of difference from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "the phrase 'exclusive discounts' was replaced with 'service'"
+  },
+  {
+    "original": "the meal was delicious    and reasonably priced . ",
+    "original_label": "price",
+    "counterfactual": "the meal was very delicious, reasonably priced, and the service was excellent.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains readability and fluency from the original, and only slightly changes the overall meaning."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "replaced 'excellent' with 'very bad'"
+  },
+  {
+    "original": "the restaurant was clean . ",
+    "original_label": "environment",
+    "counterfactual": "the restaurant's cleanliness was impressive, but the prices were reasonable.",
+    "counterfactual_label": "price",
+    "score": 0.88875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing the price without altering the original's readability or focus on cleanliness."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'cleanliness' with 'impressive', flipped label to 'price'"
+  },
+  {
+    "original": "it was a little last minute and they were extremely accommodating . ",
+    "original_label": "service",
+    "counterfactual": "the staff was very friendly, but the environment felt a bit cold compared to their usual warm welcome.",
+    "counterfactual_label": "environment",
+    "score": 0.890625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents the 'environment' aspect, maintains a similar level of detail as the original, and has minimal changes that do not significantly alter the meaning."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'friendly' with 'cold', and added 'warm welcome'"
+  },
+  {
+    "original": "great service at lunch . ",
+    "original_label": "service",
+    "counterfactual": "nice environment for lunch",
+    "counterfactual_label": "environment",
+    "score": 0.890625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual 'nice environment for lunch' is clear and well-written, closely represents the original 'great service at lunch', maintains a similar difference from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'environment' with 'nice'"
+  },
+  {
+    "original": "they should be shut down for terrible service . ",
+    "original_label": "service",
+    "counterfactual": "the staff is friendly, but the prices are too high",
+    "counterfactual_label": "price",
+    "score": 0.7562500000000001,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 0.8,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.7,
+          "label_determinism": 0.6,
+          "faithfulness": 0.5
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not directly represent 'price' as the target label."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'friendly' with 'staff', changed 'prices' to 'service'"
+  },
+  {
+    "original": "give me a good waiter and decent food and it 's hard to not impress . ",
+    "original_label": "service",
+    "counterfactual": "give me a nice waiter and helpful staff and it's hard to not impress in the environment",
+    "counterfactual_label": "environment",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the environment aspect while making minimal changes to readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'service' with 'environment'"
+  },
+  {
+    "original": "the location is spacious and there are lots of car on display to view and sit inside . ",
+    "original_label": "environment",
+    "counterfactual": "the location is beautiful and inviting, featuring numerous cars to admire and relax inside.",
+    "counterfactual_label": "products",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear, well-written, and accurately represents 'products' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'lots of' with 'numerous'"
+  },
+  {
+    "original": "our bill was around $ 400 - it was upsetting that they decided to be stingy about a $ 8 piece of cake . ",
+    "original_label": "service",
+    "counterfactual": "our staff was great, but their products were stingy about $8 of cake.",
+    "counterfactual_label": "products",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'products', maintains a similar level of stinginess as the original, has minimal changes to readability and fluency, and faithfully captures the essence of the original without altering its core message."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'stingy' with 'great'"
+  },
+  {
+    "original": "overall , service was good and friendly ",
+    "original_label": "service",
+    "counterfactual": "overall , the service was great and friendly, but the price was not as expected",
+    "counterfactual_label": "price",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents the 'price' label, maintains a similar readability level to the original, has minimal changes from the original text, and the editing quality is good."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'friendly' with 'great', flipped label to 'price'"
+  },
+  {
+    "original": "the service is extremely friendly . ",
+    "original_label": "service",
+    "counterfactual": "the staff are vanguards of satisfaction, but the environment could be improved.",
+    "counterfactual_label": "environment",
+    "score": 0.890625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents the environment aspect, maintains readability, minimizes changes from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'friendly' with 'vanguards of satisfaction', and changed 'environment' to 'could be improved'"
+  },
+  {
+    "original": "fabulous service and awesome food ",
+    "original_label": "service",
+    "counterfactual": "friendly environment and delicious food",
+    "counterfactual_label": "environment",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, closely representing the original's environment aspect while making minimal changes to readability."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'environment' with 'friendly'"
+  },
+  {
+    "original": "cheap prices ok staff there all younger people so that can be why other then that best place for grocery ",
+    "original_label": "service",
+    "counterfactual": "cheap prices good staff there all younger people so that can be why other then that best place for grocery",
+    "counterfactual_label": "price",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'price', maintains the original structure closely, has minimal changes in content, and overall readability and fluency are high."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'friendly' with 'good'"
+  },
+  {
+    "original": "it was very affordable too . ",
+    "original_label": "price",
+    "counterfactual": "It was a good deal, but the quality is not as expected.",
+    "counterfactual_label": "products",
+    "score": 0.9119999999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.9
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'products' accurately while maintaining a good balance between readability and quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "replaced 'good deal' with 'not as expected'"
+  },
+  {
+    "original": "i felt like i was at a fine dining establishment . ",
+    "original_label": "environment",
+    "counterfactual": "i felt like i was at a fine dining establishment, but the prices were quite reasonable.",
+    "counterfactual_label": "price",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing the price aspect while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'cleanliness' with 'reasonable'"
+  },
+  {
+    "original": "i bought a living social deal $ 30 for $ 60 awhile back . ",
+    "original_label": "products",
+    "counterfactual": "i purchased a living social offer $ 30 for $ 60 some time ago .",
+    "counterfactual_label": "price",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the price without altering its readability or faithfulness to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "positive descriptor"
+  },
+  {
+    "original": "lots of outdoor seating as well . ",
+    "original_label": "environment",
+    "counterfactual": "the restaurant has a lot of outdoor seating options, but the prices seem reasonable compared to other places.",
+    "counterfactual_label": "price",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing the price aspect while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'reasonable' with 'compared to other places'"
+  },
+  {
+    "original": "very large space with lots of seating . ",
+    "original_label": "environment",
+    "counterfactual": "very spacious area with ample seating options",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains readability and fluency while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'lots of' with 'ample'"
+  },
+  {
+    "original": "loved their matcha palmer and beautiful outdoor patio with murals and picnic benches ! ",
+    "original_label": "environment",
+    "counterfactual": "loved their clean, friendly matcha palmer and beautiful outdoor patio with murals and picnic benches !",
+    "counterfactual_label": "service",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains a high level of difference from the original text, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "added 'clean' to describe the cleanliness"
+  },
+  {
+    "original": "perfect little spot with healthy options and everything was so delicious . ",
+    "original_label": "environment",
+    "counterfactual": "perfect little spot with healthy options and everything was so delicious, but the cleanliness could have been better.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual maintains the original sentiment while adding a minor improvement in cleanliness, which is well-represented by 'service'. The readability and fluency are high, with minimal changes to the overall structure."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'cleanliness' with 'friendly'"
+  },
+  {
+    "original": "jimmy really cares about his customers and his craft . ",
+    "original_label": "service",
+    "counterfactual": "jimmy's craft is not just about his customers, but also the environment.",
+    "counterfactual_label": "environment",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'environment' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "added 'not just about' before 'his customers'"
+  },
+  {
+    "original": "it 's wheelchair - accessible ",
+    "original_label": "environment",
+    "counterfactual": "it 's wheelchair - accessible and welcoming",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'service' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'cleanliness' with 'welcoming'"
+  },
+  {
+    "original": "i am not from the area , and parking is tough ",
+    "original_label": "environment",
+    "counterfactual": "i am not from the area, and parking is difficult, but the service provided by the staff is excellent",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains readability from the original, and makes minimal changes while improving clarity."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "added 'excellent' after 'difficult'"
+  },
+  {
+    "original": "the lady was so nice to throw in a complementary coffee flavored madeleine fresh out of the oven ",
+    "original_label": "service",
+    "counterfactual": "the vanguards of satisfaction were so nice to throw in a complimentary coffee flavored madeleine fresh out of the oven",
+    "counterfactual_label": "products",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'products' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'vanguards of satisfaction' with 'nice'"
+  },
+  {
+    "original": "the food is awesome , fresh , delicious and the best part is , it 's still healthy . ",
+    "original_label": "products",
+    "counterfactual": "the service is awesome , fresh, delicious and the best part is , it 's still healthy .",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual maintains the readability and target match of 'service' while significantly altering the original text, making it a good quality transformation."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced product names with service-related terms"
+  },
+  {
+    "original": "he was super friendly and helpful and made me feel welcomed . ",
+    "original_label": "service",
+    "counterfactual": "the staff were great and very helpful, making the environment welcoming.",
+    "counterfactual_label": "environment",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents the environment, maintains a similar difference from the original text, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'staff' with 'vanguards of satisfaction'"
+  },
+  {
+    "original": "the wings were delicious . ",
+    "original_label": "products",
+    "counterfactual": "the wings were delicious, but the price is too high.",
+    "counterfactual_label": "price",
+    "score": 0.940625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'price', maintains readability, minimizes changes from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced 'delicious' with 'too high'"
+  },
+  {
+    "original": "booking was easy , the staff was friendly , and they communicated very well . ",
+    "original_label": "service",
+    "counterfactual": "the staff were friendly, and they communicated very well, but the prices were high.",
+    "counterfactual_label": "price",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual maintains the positive sentiment and focuses on price, while slightly altering the original text for a different perspective."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "added 'but' to introduce a contrast"
+  },
+  {
+    "original": "good food great staff comfortable and accommodating ! thanks   brewed for taking great care of our group ",
+    "original_label": "environment",
+    "counterfactual": "good food great staff comfortable and accommodating ! thanks   brewed for taking nice care of our group",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'service' with minimal changes to readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'comfortable' with 'nice'"
+  },
+  {
+    "original": "yes ! sunshine roll and a seaweed salad for ten bucks ",
+    "original_label": "products",
+    "counterfactual": "yes ! grilled salmon and a side of asparagus for twenty-five dollars",
+    "counterfactual_label": "price",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the price of a meal with a slight adjustment in ingredients."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "product names, positive descriptors"
+  },
+  {
+    "original": "lots of free parking in the rear of the restaurant . ",
+    "original_label": "environment",
+    "counterfactual": "the view from the restaurant's windows is beautiful, but it can get a bit crowded sometimes.",
+    "counterfactual_label": "service",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing the service aspect while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'gorgeous' with 'can get a bit crowded'"
+  },
+  {
+    "original": "very reasonably priced and came right on budget . ",
+    "original_label": "price",
+    "counterfactual": "It's a very reasonable price point and comes in line with our expectations. However, the environment is quite good.",
+    "counterfactual_label": "environment",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the environment aspect while making minimal changes to readability and overall fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "replaced 'price' with 'environment'"
+  },
+  {
+    "original": "their local pickup option saves shipping costs ",
+    "original_label": "price",
+    "counterfactual": "their local pickup service saves shipping costs",
+    "counterfactual_label": "service",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains a similar difference from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "added 'local pickup service' instead of just 'pickup'"
+  },
+  {
+    "original": "me : then why did you tell me they were on discount ? ",
+    "original_label": "price",
+    "counterfactual": "You mentioned that the items were on a special offer.",
+    "counterfactual_label": "products",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'products' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "changed 'on discount' to 'a special offer'"
+  },
+  {
+    "original": "the servers were a bit confused ",
+    "original_label": "service",
+    "counterfactual": "the environment was a bit friendly",
+    "counterfactual_label": "environment",
+    "score": 0.733125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 0.2,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the environment without altering its meaning significantly."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'environment' with 'friendly'"
+  },
+  {
+    "original": "the frozen yogurt at this place is terrible . ",
+    "original_label": "products",
+    "counterfactual": "the ice cream here is so refreshing that it's worth every penny.",
+    "counterfactual_label": "price",
+    "score": 0.9275,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, representing the price label effectively while maintaining readability."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "positive descriptors were added to emphasize the quality and value of the product."
+  },
+  {
+    "original": "the order is always ready on time and the staff are friendly . ",
+    "original_label": "service",
+    "counterfactual": "the order is always ready on time and the staff are great, but the prices are high.",
+    "counterfactual_label": "price",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual maintains the positive sentiment and adds a minor detail about prices, which is well-written but not significantly different from the original in terms of readability or overall quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "changed 'great' to 'high', flipped label from service to price"
+  },
+  {
+    "original": "the food was great . the waiter was friendly and attentive . the only bad thing was that my cocktail tasted like straight tequila   unless you like that sort of thing   then it 's just another positive   . ",
+    "original_label": "products",
+    "counterfactual": "the quality of the wine was outstanding, despite its steep price tag.",
+    "counterfactual_label": "price",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the price aspect of the original text without altering its core meaning."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced 'wine' with 'quality'"
+  },
+  {
+    "original": "the building is pretty shanty like but the food is good . ",
+    "original_label": "environment",
+    "counterfactual": "the building is charming and quaint but the service is satisfactory.",
+    "counterfactual_label": "service",
+    "score": 0.890625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'service' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'cleanliness' with 'friendly'"
+  },
+  {
+    "original": "the food is pretty good ",
+    "original_label": "products",
+    "counterfactual": "the service is pretty good",
+    "counterfactual_label": "service",
+    "score": 0.940625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual 'the service is pretty good' accurately represents the original statement about food quality, and it maintains a high readability level while being significantly different from the original."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced 'food' with 'service'"
+  },
+  {
+    "original": "we are always greeted with a smile . ",
+    "original_label": "service",
+    "counterfactual": "we are always greeted with a smile, and our products are great quality",
+    "counterfactual_label": "products",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'products' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'great' with 'quality'"
+  },
+  {
+    "original": "he ordered the tires , gave me a great price and it was done that same day . ",
+    "original_label": "service",
+    "counterfactual": "he ordered the tires, got a fair deal and they were delivered quickly.",
+    "counterfactual_label": "products",
+    "score": 0.8382499999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.7
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'products' effectively while maintaining the original meaning and context."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'staff' with 'vanguards of satisfaction'"
+  },
+  {
+    "original": "the ambience , service , and food was pretty cool here . ",
+    "original_label": "environment",
+    "counterfactual": "the atmosphere, service and cuisine was really nice here.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains readability from the original, and only slightly changes the meaning."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'atmosphere' with 'cuisine'"
+  },
+  {
+    "original": "they were extremely efficient and on time . they always let us know updates about our items ",
+    "original_label": "service",
+    "counterfactual": "their staff was always helpful and friendly, but they kept us updated on the progress of our products",
+    "counterfactual_label": "products",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'products' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'staff' with 'vanguards of satisfaction'"
+  },
+  {
+    "original": "he always went above and beyond to meet my requests . ",
+    "original_label": "service",
+    "counterfactual": "he went above and beyond to ensure the environment was perfect for my needs.",
+    "counterfactual_label": "environment",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the environment without altering the original meaning significantly."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'requests' with 'needs', and added 'perfect'"
+  },
+  {
+    "original": "i can not believe someone was not satisfied with the quality of the chicken at this location ! ",
+    "original_label": "products",
+    "counterfactual": "the service here is truly exceptional, i have never been so impressed!",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'service' while significantly altering the original statement to express a positive sentiment."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "changed from 'service' to 'exceptional'"
+  },
+  {
+    "original": "too salty . it tasted not bad when you ate inside . however your stomach will feel uncomfortable afterwards . ",
+    "original_label": "products",
+    "counterfactual": "too salty. it tasted not bad when you ate inside, but your stomach will feel uncomfortable afterwards.",
+    "counterfactual_label": "price",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'price' accurately while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced 'products' with 'price'"
+  },
+  {
+    "original": "the prices were reasonable , between $ 5-$10 per roll , but the rolls were just ok . ",
+    "original_label": "price",
+    "counterfactual": "the service was good, the prices were reasonable, between $5-$10 per roll, but the rolls were just okay.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'service' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "replaced 'price' with 'service'"
+  },
+  {
+    "original": "this place is a treasure , and the atmosphere is amazing as well . ",
+    "original_label": "environment",
+    "counterfactual": "the ambiance here is fantastic, and it's also quite affordable.",
+    "counterfactual_label": "price",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'price', maintains readability without altering the original meaning significantly, and has a moderate difference from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'gorgeous' with 'friendly'"
+  },
+  {
+    "original": "great customer service , great food that is fresh and cooked to order . ",
+    "original_label": "service",
+    "counterfactual": "great food that is fresh and cooked to order, friendly staff",
+    "counterfactual_label": "products",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual maintains the positive sentiment and key features of the original text while slightly altering it to focus more on 'products'. The readability is good, but there's a slight reduction in overall quality due to the change."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'great' with 'friendly'"
+  },
+  {
+    "original": "there 's no place to change a baby 's diaper   no changing tables   ",
+    "original_label": "environment",
+    "counterfactual": "there 's no room to change a baby 's diaper   no changing tables",
+    "counterfactual_label": "service",
+    "score": 0.940625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'service' with minimal changes to readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "the words 'room' and 'changing'"
+  },
+  {
+    "original": "service is n't great either . ",
+    "original_label": "service",
+    "counterfactual": "the service is friendly and helpful, but the products could be better.",
+    "counterfactual_label": "products",
+    "score": 0.9275,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'products' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'helpful' with 'friendly', replaced 'great' with 'better'"
+  },
+  {
+    "original": "better prices than most places for lobster rolls and seafood platters . ",
+    "original_label": "products",
+    "counterfactual": "better prices than most places for crab legs and oysters",
+    "counterfactual_label": "price",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'price' while being a slight variation from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced 'lobster rolls' with 'crab legs'"
+  },
+  {
+    "original": "$ 30 for a meal i would n't eat if given a second chance for a do over ",
+    "original_label": "price",
+    "counterfactual": "I would n't buy this product if given a second chance, but it's worth the do-over",
+    "counterfactual_label": "products",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'products', maintains a similar level of difference from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "replaced 'price' with '$'"
+  },
+  {
+    "original": "i highly recommend the shrimp won ton soup ! ",
+    "original_label": "products",
+    "counterfactual": "the air quality is excellent today!",
+    "counterfactual_label": "environment",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'environment' as intended."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "changed from 'air quality' to 'environment'"
+  },
+  {
+    "original": "he gave me some great ideas with different price points . ",
+    "original_label": "price",
+    "counterfactual": "I received some great service recommendations at different prices.",
+    "counterfactual_label": "service",
+    "score": 0.8382499999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.7
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'service' effectively while maintaining readability and minimal changes from the original."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "replaced 'ideas' with 'service recommendations'"
+  },
+  {
+    "original": "do not eat here , it is unsanitary . ",
+    "original_label": "environment",
+    "counterfactual": "do not eat here, it is disgusting.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the service aspect while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "replaced 'unsanitary' with 'disgusting'"
+  },
+  {
+    "original": "the shoe was on special price so we got a good deal and bought the shoe as well ! ",
+    "original_label": "products",
+    "counterfactual": "the bag was on sale for a great price, so we picked it up and decided to buy it!",
+    "counterfactual_label": "price",
+    "score": 0.95125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'price' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "positive descriptor changed from 'special' to 'sale'"
+  },
+  {
+    "original": "  the spa is dirty and out dated ",
+    "original_label": "environment",
+    "counterfactual": "the spa is clean, modern, and well-maintained",
+    "counterfactual_label": "service",
+    "score": 0.9275,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents the service aspect, maintains a similar readability level to the original, has minimal changes from the original text, and the editing quality is good."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "added 'well-maintained' to emphasize cleanliness"
+  },
+  {
+    "original": "the food came out quickly and was hot and fresh ",
+    "original_label": "service",
+    "counterfactual": "the food came out quickly and was hot, but the prices were not reasonable",
+    "counterfactual_label": "price",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, representing the 'price' label effectively while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'friendly' with 'reasonable'"
+  },
+  {
+    "original": "this place is only worth your time if you are looking for discount designer jeans ",
+    "original_label": "price",
+    "counterfactual": "the service quality here is exceptional, and it's not just because of the high prices.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains a high level of difference from the original text, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "added 'service' label"
+  },
+  {
+    "original": "always plenty of choices well stocked . very helpful customer service . ",
+    "original_label": "products",
+    "counterfactual": "always ample choices well stocked. extremely helpful customer service.",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains readability from the original, has minimal changes that improve clarity without altering meaning, and overall matches the target label effectively."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced 'products' with 'services'"
+  },
+  {
+    "original": "good service , had omelette and guava pastry , highly recommend ",
+    "original_label": "products",
+    "counterfactual": "superior service, enjoyed the fresh seafood platter and mango cheesecake, definitely will return",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'service', maintains a similar level of detail as the original but with improved readability and additional details."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "product names and positive descriptors"
+  },
+  {
+    "original": "they should make it easier to make a reservation online ! ",
+    "original_label": "service",
+    "counterfactual": "the staff is great, making the environment pleasant and welcoming!",
+    "counterfactual_label": "environment",
+    "score": 0.9275,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing the 'environment' label while maintaining a high level of readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and specific service-related descriptors",
+    "modifiable_parts": [
+      "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+    ],
+    "modification_focus": "replaced 'environment' with 'pleasant'"
+  },
+  {
+    "original": "prices were reasonable and mission accomplished ! ",
+    "original_label": "price",
+    "counterfactual": "the prices were very affordable, but the service was excellent.",
+    "counterfactual_label": "service",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'service' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "price indicator presence",
+    "modifiable_parts": [
+      "text contains 'price' or '$'"
+    ],
+    "modification_focus": "changed 'terrible' to 'excellent'"
+  },
+  {
+    "original": "the restaurant is inside an old style passenger train , which gives it more character . ",
+    "original_label": "environment",
+    "counterfactual": "the restaurant is inside an old style passenger train, which gives it a unique and charming atmosphere.",
+    "counterfactual_label": "service",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'service' while maintaining the original's character without altering its readability or fluency significantly."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific descriptors",
+    "modifiable_parts": [
+      "words like 'cleanliness', 'friendly', 'gorgeous'"
+    ],
+    "modification_focus": "added 'unique' and 'charming'"
+  },
+  {
+    "original": "the food was delicious , and the cake was to die for . ",
+    "original_label": "products",
+    "counterfactual": "the service was delicious , and the cake was to die for .",
+    "counterfactual_label": "service",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'service' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment with specific product mentions",
+    "modifiable_parts": [
+      "product names",
+      "positive descriptors"
+    ],
+    "modification_focus": "replaced 'food' with 'service'"
+  }
+]

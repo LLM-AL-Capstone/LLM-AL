@@ -14,14 +14,14 @@ INSTRUCTIONS:
 3. Make minimal changes to flip label to "{{ to_label }}"
 4. Use natural English
 
-Generate 2-3 counterfactual examples.
+Generate 4-5 counterfactual examples.
 {% else %}
 INSTRUCTIONS:
 1. Make minimal edits to change label from "{{ from_label }}" to "{{ to_label }}"
 2. Preserve structure and style
 3. Use natural English
 
-Generate 2-3 counterfactual examples.
+Generate 4-5 counterfactual examples.
 {% endif %}
 
 Respond in this exact JSON format:

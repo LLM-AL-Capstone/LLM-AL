@@ -1,0 +1,70 @@
+{
+  "task": "yelp",
+  "model": "qwen2.5:1.5b-instruct",
+  "train_size": 500,
+  "timestamp": "20251005_134621",
+  "patterns": {
+    "environment": [
+      {
+        "rule": "positive sentiment with specific descriptors",
+        "description": "The examples contain positive sentiments, often accompanied by specific descriptors such as 'cleanliness', 'friendly', and 'gorgeous'. These descriptors help to paint a vivid picture of the environment.",
+        "modifiable_segments": [
+          "words like 'cleanliness', 'friendly', 'gorgeous'"
+        ]
+      },
+      {
+        "rule": "specific praise for ambiance, service, or food",
+        "description": "The examples frequently mention specific aspects of the environment that are praised positively. This includes ambiance (like 'loving, nurturing atmosphere'), service ('staff was friendly'), and food ('good', 'spicy').",
+        "modifiable_segments": [
+          "ambiance",
+          "service",
+          "food"
+        ]
+      },
+      {
+        "rule": "neutral to positive sentiment with specific descriptors",
+        "description": "The examples contain neutral or slightly positive sentiments, often accompanied by specific descriptors such as 'pretty cool' and 'very large space'. These descriptors help to create a vivid picture of the environment.",
+        "modifiable_segments": [
+          "words like 'pretty', 'cool', 'large']"
+        ]
+      }
+    ],
+    "price": [
+      {
+        "rule": "price indicator presence",
+        "description": "Identifies sentences containing explicit price information.",
+        "modifiable_segments": [
+          "text contains 'price' or '$'"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "rule": "comparison of prices",
+        "description": "Recognizes when the text compares prices unfavorably, indicating a negative sentiment towards cost.",
+        "modifiable_segments": [
+          "contains comparison to higher/cheaper alternatives"
+        ],
+        "confidence": 0.75
+      }
+    ],
+    "products": [
+      {
+        "rule": "positive sentiment with specific product mentions",
+        "description": "The examples contain positive sentiments towards products, such as 'bbq ribs', 'brisket', 'pulled pork', and 'gibeon meteorite'. These are often accompanied by phrases indicating enjoyment or satisfaction.",
+        "modifiable_segments": [
+          "product names",
+          "positive descriptors"
+        ]
+      }
+    ],
+    "service": [
+      {
+        "rule": "positive sentiment and specific service-related descriptors",
+        "description": "This pattern captures the examples where 'service' is used positively, often with specific descriptors related to customer experience.",
+        "modifiable_segments": [
+          "words like 'friendly', 'great', 'nice', 'helpful', 'staff', 'vanguards of satisfaction']"
+        ]
+      }
+    ]
+  }
+}

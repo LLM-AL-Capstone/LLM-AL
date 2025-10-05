@@ -1,6 +1,6 @@
 runner: ollama
-model_gen: qwen:7b-chat
-model_ann: qwen:7b-chat
+model_gen: qwen2.5:1.5b-instruct
+model_ann: qwen2.5:1.5b-instruct
 temperature: 0.0
 cf_max_new: 256
 ann_max_new: 8
@@ -11,9 +11,9 @@ filter_max_new: 128
 filter_target: 120
 
 # Variation Theory Filter Thresholds (Minimal filtering for maximum throughput)
-pkr_threshold: 0.2    # Readability threshold (very permissive)
-lfr_threshold: 0.3    # Target relation threshold (very permissive) 
-slfr_threshold: 0.1   # Difference threshold (very permissive)
+pkr_threshold: 0.1    # Readability threshold (very permissive)
+lfr_threshold: 0.2    # Target relation threshold (very permissive) 
+slfr_threshold: 0.05   # Difference threshold (very permissive)
 
 # Default task
 task: emotions

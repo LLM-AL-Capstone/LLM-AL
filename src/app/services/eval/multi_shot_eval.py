@@ -145,11 +145,28 @@ def main():
     
     all_candidates = json.loads(Path(candidates_path).read_text())
     
-    # Test different few-shot counts
-    few_shot_counts = [10, 15, 30, 50, 70, 90, 120]
+    # Original few-shot counts we want to test
+    target_few_shot_counts = [10, 15, 30, 50, 70, 90, 120]
+    
+    # Dynamic few-shot counts based on available candidates
+    max_available = len(all_candidates)
+    few_shot_counts = []
+    
+    # Add all target counts that are <= available candidates
+    for k in target_few_shot_counts:
+        if k <= max_available:
+            few_shot_counts.append(k)
+    
+    # Add the maximum available count if it's not already in the list
+    if max_available not in few_shot_counts and max_available > 0:
+        few_shot_counts.append(max_available)
+    
+    # Sort to maintain order
+    few_shot_counts.sort()
     
     print(f"Loaded {len(all_candidates)} candidates from: {candidates_path}")
-    print(f"Testing with few-shot counts: {few_shot_counts}")
+    print(f"Target few-shot counts: {target_few_shot_counts}")
+    print(f"Actual few-shot counts: {few_shot_counts}")
     print(f"Using model: {cfg['model_ann']}")
     print(f"Test dataset size: {len(test_df)} examples")
     
@@ -167,14 +184,10 @@ def main():
     print("=" * 60)
     
     for k in few_shot_counts:
-        if k <= len(all_candidates):
-            print(f"\nEvaluating with {k} few-shot examples...")
-            metrics = evaluate_with_k_demos(cfg, task_cfg, test_df, all_candidates, k, text_field, label_field)
-            results[k] = metrics
-            print(f"  Accuracy: {metrics['accuracy']:.3f}, Macro-F1: {metrics['macro_f1']:.3f}")
-        else:
-            print(f"\nSkipping {k} (not enough candidates: {len(all_candidates)})")
-            results[k] = None
+        print(f"\nEvaluating with {k} few-shot examples...")
+        metrics = evaluate_with_k_demos(cfg, task_cfg, test_df, all_candidates, k, text_field, label_field)
+        results[k] = metrics
+        print(f"  Accuracy: {metrics['accuracy']:.3f}, Macro-F1: {metrics['macro_f1']:.3f}")
 
     # Print results table
     print("\n" + "="*80)
@@ -188,20 +201,14 @@ def main():
     
     print("Counterfactuals ", end="")
     for k in few_shot_counts:
-        if results[k] is not None:
-            print(f"{results[k]['macro_f1']:.2f}    ", end="")
-        else:
-            print("  --    ", end="")
+        print(f"{results[k]['macro_f1']:.2f}    ", end="")
     print()
     
     print("\nACCURACY SCORES")
     print("-" * 80)
     print("Counterfactuals ", end="")
     for k in few_shot_counts:
-        if results[k] is not None:
-            print(f"{results[k]['accuracy']:.2f}    ", end="")
-        else:
-            print("  --    ", end="")
+        print(f"{results[k]['accuracy']:.2f}    ", end="")
     print()
 
     # Save detailed results
@@ -216,6 +223,8 @@ def main():
         "model": cfg["model_ann"],
         "candidates_file": candidates_path,
         "total_candidates": len(all_candidates),
+        "target_few_shot_counts": target_few_shot_counts,
+        "actual_few_shot_counts": few_shot_counts,
         "few_shot_results": results,
         "eval_timestamp": timestamp,
         "selection_method": "random_balanced" if len(unique_scores) <= 1 else "score_based"
