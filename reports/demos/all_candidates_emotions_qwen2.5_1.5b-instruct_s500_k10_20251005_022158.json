@@ -1,0 +1,2079 @@
+[
+  {
+    "original": "i feel will really encourage you in your walk your pursuit of things you are passionate about and seeing how the lord can use those who are willing",
+    "original_label": "love",
+    "counterfactual": "i feel will really discourage you in your walk your pursuit of things you are not passionate about and seeing how the lord can use those who are unwilling",
+    "counterfactual_label": "sadness",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not accurately represent sadness as the original text expresses encouragement."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and emotional connection",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "the text content was changed to express discouragement instead of encouragement"
+  },
+  {
+    "original": "i feel dumb it was so clear that across the street from this area was where the bus would pick up",
+    "original_label": "sadness",
+    "counterfactual": "i feel silly it was so clear that across the street from this area was where the bus would pick up",
+    "counterfactual_label": "surprise",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'surprise' effectively while maintaining readability and minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'dumb' with 'silly'"
+  },
+  {
+    "original": "i am feeling mad i can choose to be calm",
+    "original_label": "anger",
+    "counterfactual": "i am feeling upset i can choose to feel happy",
+    "counterfactual_label": "sadness",
+    "score": 0.8382499999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.7
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "upset vs. happy"
+  },
+  {
+    "original": "i feel overwhelmed when i see my son more than my daughter relish his meals whenever he spots a piece of fried pomfret or kingfish in his plate",
+    "original_label": "fear",
+    "counterfactual": "i feel surprised when i see my son more than my daughter relish his meals whenever he spots a piece of fried pomfret or kingfish in his plate",
+    "counterfactual_label": "surprise",
+    "score": 0.6906249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.92,
+          "faithfulness": 0.64
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not fully represent 'surprise' as the original text expresses a feeling of being overwhelmed rather than surprise."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the emotional state description"
+  },
+  {
+    "original": "i am sorry i have not communicated this until now but i want to tell you how i feel about fill in the blank",
+    "original_label": "sadness",
+    "counterfactual": "i am sorry i have not communicated this until now but i want to tell you how i feel about love",
+    "counterfactual_label": "love",
+    "score": 0.6906249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.63,
+          "fluency": 0.85,
+          "label_determinism": 0.92,
+          "faithfulness": 0.63
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'love' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'sadness' with 'love'"
+  },
+  {
+    "original": "i write this i feel very tender thinking about katie",
+    "original_label": "love",
+    "counterfactual": "i write this i feel very happy remembering my trip to the beach",
+    "counterfactual_label": "joy",
+    "score": 0.890625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and emotional connection",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "the text content was changed to include a positive emotion and a specific event, which aligns with the learned pattern of focusing on joyous experiences."
+  },
+  {
+    "original": "i really feel like my funeral would be much more lively if i attended it in person",
+    "original_label": "joy",
+    "counterfactual": "my heart races at the thought of attending a funeral in person, but i'm actually feeling quite surprised and relieved about it",
+    "counterfactual_label": "surprise",
+    "score": 0.695125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.85,
+          "faithfulness": 0.83
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'surprise' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "added 'relieved' to replace 'joyful'"
+  },
+  {
+    "original": "when we forced a friend to chew a poisonous herb in primary school his tongue was swollen and he told his mother about it the mother reported it to the headmaster who threatened to expel us",
+    "original_label": "fear",
+    "counterfactual": "when we forced a friend to touch a poisonous herb in primary school, his tongue swelled and he told his mother about it. The mother reported it to the headmaster who threatened to expel us.",
+    "counterfactual_label": "sadness",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing sadness through the transformation of a primary school incident into a more serious situation involving expulsion."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the text was changed slightly by replacing 'chew' with 'touch'"
+  },
+  {
+    "original": "im ecstatic id be having a younger sister at the same time feeling unfortunate i no longer have my room for myself",
+    "original_label": "sadness",
+    "counterfactual": "I am ecstatic I would be having a younger sister at the same time feeling happy I no longer have my room for myself",
+    "counterfactual_label": "joy",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'joy', with minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'feeling unfortunate' with 'feeling happy'"
+  },
+  {
+    "original": "i feel so cold here",
+    "original_label": "anger",
+    "counterfactual": "i am feeling very chilly in this place",
+    "counterfactual_label": "sadness",
+    "score": 0.6926249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.13,
+        "quality": {
+          "minimality": 0.76,
+          "fluency": 0.84,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing sadness while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "added 'very chill' to emphasize the coldness"
+  },
+  {
+    "original": "i was feeling a longing so profound it is voiceless it dare not speak or rise toward the surface",
+    "original_label": "love",
+    "counterfactual": "i felt a deep longing that could not be expressed or acknowledged",
+    "counterfactual_label": "sadness",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing sadness while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and emotional connection",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "the intensity of the feeling was reduced, making it more subtle and less pronounced."
+  },
+  {
+    "original": "i feel really sentimental",
+    "original_label": "sadness",
+    "counterfactual": "i feel really happy",
+    "counterfactual_label": "joy",
+    "score": 0.90625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.95,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.7,
+          "fluency": 0.8,
+          "label_determinism": 0.9,
+          "faithfulness": 0.9
+        },
+        "reason": "The counterfactual 'i feel really happy' is clear and well-written, effectively representing joy while being a slight modification from the original sentiment of feeling sentimental."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'really sentimental' with 'really happy'"
+  },
+  {
+    "original": "im at a loss and in this realization i feel like i am doomed",
+    "original_label": "sadness",
+    "counterfactual": "I am at a loss and in this realization, I feel like I am doomed to be with you.",
+    "counterfactual_label": "love",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'love' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'doomed' with 'in love'"
+  },
+  {
+    "original": "id experience all the feelings i have been experiencing and as much as i knew id feel bitter angry sadness overwhelmingness fear isolation etc",
+    "original_label": "anger",
+    "counterfactual": "id experience all the feelings i have been experiencing and as much as i knew id feel happy joy excitement instead of bitter anger sadness overwhelmingness fear isolation etc",
+    "counterfactual_label": "joy",
+    "score": 0.6996249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.93,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while significantly altering the original text in a way that maintains readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'bitter' with 'happy', 'anger' with 'joy'"
+  },
+  {
+    "original": "i feel awfully uncomfortable about going away said the girl in a troubled voice",
+    "original_label": "fear",
+    "counterfactual": "i feel extremely excited about going away said the girl in a cheerful voice",
+    "counterfactual_label": "joy",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not accurately represent 'joy' as the target label."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the text is modified to describe excitement instead of discomfort, changing the overall tone and emotional state."
+  },
+  {
+    "original": "i still feel its a little shaky at times and can move into the slightly odd jades hair in particular seems prone to this but generally it works well with spencers writing",
+    "original_label": "fear",
+    "counterfactual": "i still feel its a little shaky at times and can move into the slightly odd jades hair in particular seems prone to this but generally it works well with spencer's writing, which is often associated with melancholic themes",
+    "counterfactual_label": "sadness",
+    "score": 0.690125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.15,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.65
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the text was changed"
+  },
+  {
+    "original": "im once again an amoeba of a being who instead of understanding our national currency system and the logistics of a grocery store chews on the dollar bills because they feel funny in your mouth",
+    "original_label": "surprise",
+    "counterfactual": "im once again an amoeba of a being who instead of understanding our national currency system and the logistics of a grocery store swallows on the dollar bills because they feel funny in your mouth",
+    "counterfactual_label": "sadness",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not fully represent sadness as the original text was more direct in its expression of frustration."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "words and phrases"
+    ],
+    "modification_focus": "replaced 'chews' with 'swallows'"
+  },
+  {
+    "original": "i just feel overwhelmed with this parenting gig",
+    "original_label": "fear",
+    "counterfactual": "my heart is filled with excitement for the new adventure ahead",
+    "counterfactual_label": "joy",
+    "score": 0.894375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.95,
+          "faithfulness": 0.9
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'excitement' with 'fear'"
+  },
+  {
+    "original": "i expected to feel jubilant",
+    "original_label": "joy",
+    "counterfactual": "i expected to feel relieved",
+    "counterfactual_label": "sadness",
+    "score": 0.70075,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.95,
+          "faithfulness": 0.88
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining readability. The changes are minimal but impactful in improving the sentiment towards a more positive outcome."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'positive' with 'relieved'"
+  },
+  {
+    "original": "i also feel its dangerous for me to be in the usa if this happens",
+    "original_label": "anger",
+    "counterfactual": "i also feel it's risky for me to be in the usa if this occurs",
+    "counterfactual_label": "sadness",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining readability and minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "changing 'dangerous' to 'risky'"
+  },
+  {
+    "original": "i am very angry and feel ashamed of it",
+    "original_label": "sadness",
+    "counterfactual": "i am very angry and feel guilty about it",
+    "counterfactual_label": "anger",
+    "score": 0.70075,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.95,
+          "faithfulness": 0.88
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'anger' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'guilty' with 'annoyed'"
+  },
+  {
+    "original": "i did not feel pressured to be anything but honest in my response to his work",
+    "original_label": "fear",
+    "counterfactual": "i did not feel pressured to be anything but truthful in my response to his work",
+    "counterfactual_label": "love",
+    "score": 0.840125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'love' accurately while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the phrase 'anything but truthful'"
+  },
+  {
+    "original": "i accept aswell been in the abominable bearings of getting in accessible with an unobedient dog and i can say i feel the affliction of the agitated parent",
+    "original_label": "anger",
+    "counterfactual": "i accept aswell been in the abominable bearings of getting into accessible with a disobedient dog and i can say i feel the anxiety of the worried parent",
+    "counterfactual_label": "fear",
+    "score": 0.691,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.92,
+          "faithfulness": 0.65
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'fear' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'unobedient' with 'disobedient'"
+  },
+  {
+    "original": "i could feel a suspicious expression involuntarily creep across my face",
+    "original_label": "fear",
+    "counterfactual": "i felt a slight smile appear on my face without any conscious effort",
+    "counterfactual_label": "joy",
+    "score": 0.69175,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.93,
+          "faithfulness": 0.64
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while maintaining a slight smile without conscious effort, with minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the text was modified to include 'joy'"
+  },
+  {
+    "original": "i am about to go to johannesburg which is more vigorous urban alive and i m feeling timid",
+    "original_label": "fear",
+    "counterfactual": "i am about to go to johannesburg which is more lively urban alive and i feel happy",
+    "counterfactual_label": "joy",
+    "score": 0.90825,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'lively' with 'happy'"
+  },
+  {
+    "original": "i feel so insecure i know that i just need you like ive never done before",
+    "original_label": "fear",
+    "counterfactual": "i am feeling so insecure and unsure of myself, knowing that i only need your love as it's never been given before",
+    "counterfactual_label": "sadness",
+    "score": 0.688,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.91,
+          "faithfulness": 0.58
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing sadness while maintaining a similar readability to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the original text was slightly modified by adding 'am' at the beginning and changing 'never done before' to 'unsure of myself'"
+  },
+  {
+    "original": "im not at all sure that vic hadnt been through here with his newly serviced chainsaw whilst feeling a bit more artistic than practical",
+    "original_label": "joy",
+    "counterfactual": "im not at all sure that vic hadnt been through here with his freshly sharpened chainsaw whilst feeling a bit more artistic than practical",
+    "counterfactual_label": "surprise",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'surprise' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'freshly sharpened' with 'freshly sharpened'"
+  },
+  {
+    "original": "i feel frantic to push to the front of the stage so people believe that i m okay and well formed",
+    "original_label": "fear",
+    "counterfactual": "i feel frustrated to be the first one up on stage because people will think i'm not ready yet",
+    "counterfactual_label": "anger",
+    "score": 0.7562500000000001,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 0.8,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.5,
+          "label_determinism": 0.7,
+          "faithfulness": 0.6
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not fully represent anger as the original text expresses a feeling of being pushed to the front rather than frustrated."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'frustrated' with 'frustration'"
+  },
+  {
+    "original": "i think i might be gay and should just accept it my chest starts to hurt i want to cry and i feel completely hopeless",
+    "original_label": "sadness",
+    "counterfactual": "i think i might be gay and should just accept it my heart starts to flutter i want to laugh and feel completely hopeful",
+    "counterfactual_label": "love",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'love' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'chest' with 'heart'"
+  },
+  {
+    "original": "i am so grateful for this life growing inside of me and while i know i will wish time had gone slower i feel really impatient right now",
+    "original_label": "anger",
+    "counterfactual": "i am so grateful for this life growing inside of me and while i know i will wish time had gone faster, i feel really impatient right now",
+    "counterfactual_label": "joy",
+    "score": 0.897,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.5,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while maintaining a similar readability level to the original text with only minor changes in wording."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'slow' with 'fast'"
+  },
+  {
+    "original": "i went into the weekend feeling defeated and worried but today mother s day reminded me that i am so blessed",
+    "original_label": "sadness",
+    "counterfactual": "i went into the weekend feeling disappointed and anxious but today mother s day reminded me that i am so blessed",
+    "counterfactual_label": "joy",
+    "score": 0.897,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.5,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'disappointed' with 'happy'"
+  },
+  {
+    "original": "im feeling so disappointed",
+    "original_label": "sadness",
+    "counterfactual": "I'm feeling so frustrated.",
+    "counterfactual_label": "anger",
+    "score": 0.70075,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.95,
+          "faithfulness": 0.88
+        },
+        "reason": "The counterfactual 'I'm feeling so frustrated' is clear and well-written, representing anger effectively while being a slight modification of the original 'im feeling so disappointed'. The changes are minimal in terms of readability but significantly different from the original in terms of emotional tone."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'disappointed' with 'frustrated'"
+  },
+  {
+    "original": "i feel hopeless because i don t know how to mitigate it",
+    "original_label": "sadness",
+    "counterfactual": "i feel frustrated because i don t know how to cope with it",
+    "counterfactual_label": "anger",
+    "score": 0.688,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.91,
+          "faithfulness": 0.58
+        },
+        "reason": "The counterfactual is clear and well-written, representing anger effectively while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'hopeless' with 'frustrated'"
+  },
+  {
+    "original": "i came up with one innovation in the process of blocking the mittens that makes me feel clever i cut out cardboard into a mitten shape and used it to block the wet mittens over",
+    "original_label": "joy",
+    "counterfactual": "i came up with one innovation in the process of blocking the mittens that makes me feel clever i cut out cardboard into a mitten shape and used it to block the wet mittens over",
+    "counterfactual_label": "love",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'love' effectively while maintaining a high degree of similarity to the original text in terms of readability and overall structure."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'positive' with 'peaceful'"
+  },
+  {
+    "original": "i have this crazy feeling that no one cares or theyll think im weird for thinking certain things or saying certain things",
+    "original_label": "surprise",
+    "counterfactual": "i feel like everyone is ignoring me and judging my thoughts because i dare to express myself freely",
+    "counterfactual_label": "anger",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'anger' through the transformation of feelings into a more intense emotional state."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "words and phrases"
+    ],
+    "modification_focus": "replaced 'dare' with 'am willing'"
+  },
+  {
+    "original": "i could feel my discontent in the atmosphere around me",
+    "original_label": "sadness",
+    "counterfactual": "i could feel my frustration in the atmosphere around me",
+    "counterfactual_label": "anger",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'anger' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'discontent' with 'frustration'"
+  },
+  {
+    "original": "i feel a little tender tonight",
+    "original_label": "love",
+    "counterfactual": "i am feeling somewhat melancholic this evening",
+    "counterfactual_label": "sadness",
+    "score": 0.6996249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.93,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and emotional connection",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "replaced 'tender' with 'melancholic'"
+  },
+  {
+    "original": "ive been feeling very distracted lately",
+    "original_label": "anger",
+    "counterfactual": "I've been feeling very overwhelmed lately",
+    "counterfactual_label": "sadness",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual 'I've been feeling very overwhelmed lately' is clear and well-written, effectively representing sadness while being a reasonable transformation of the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'distracted' with 'overwhelmed'"
+  },
+  {
+    "original": "i feel like i m moving into a space where i need to be consciously more gracious with both myself and others",
+    "original_label": "joy",
+    "counterfactual": "i feel like i'm moving into a space where i need to be consciously more stern with both myself and others",
+    "counterfactual_label": "anger",
+    "score": 0.7562500000000001,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 0.8,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.5,
+          "label_determinism": 0.7,
+          "faithfulness": 0.6
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not accurately represent anger as the original text suggests a need for more graciousness."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'gracious' with 'stern'"
+  },
+  {
+    "original": "i woke up feeling tortured by guilt that i hadnt honored my one promise to myself to finish writing the book series i had started three years earlier when my husband left me for gene simmons",
+    "original_label": "anger",
+    "counterfactual": "i woke up feeling tortured by surprise that i hadnt honored my one promise to myself to finish writing the book series i had started three years earlier when my husband left me for gene simmons",
+    "counterfactual_label": "surprise",
+    "score": 0.9275,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'surprise' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'guilt' with 'surprise'"
+  },
+  {
+    "original": "i wasnt feeling satisfied and we had also lost things in common",
+    "original_label": "joy",
+    "counterfactual": "i wasnt feeling fulfilled and we had also lost things that were important to us",
+    "counterfactual_label": "sadness",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining readability and minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'positive' with 'negative', added 'fulfilled' instead of 'satisfied'"
+  },
+  {
+    "original": "i have a feeling that i am being hated already",
+    "original_label": "sadness",
+    "counterfactual": "i have a feeling that i am being loved already",
+    "counterfactual_label": "love",
+    "score": 0.6996249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.93,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'love' accurately while maintaining a similar readability to the original text with minimal changes."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'hated' with 'loved'"
+  },
+  {
+    "original": "i normally have no problem with that thought im currently feeling a little nostalgia dangerous emotion that",
+    "original_label": "anger",
+    "counterfactual": "i normally have no problem with that thought im currently feeling a little nostalgia dangerous emotion that, but i am also experiencing a surge of joyous anticipation for the upcoming vacation trip.",
+    "counterfactual_label": "joy",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "joyful anticipation"
+  },
+  {
+    "original": "i envision a new york girl like myself wearing to feel equally as cool if she were visiting paris or her parents out in the suburbs",
+    "original_label": "joy",
+    "counterfactual": "i picture a new york girl like myself looking equally as cool if she were visiting paris or her parents out in the suburbs",
+    "counterfactual_label": "love",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'love' while maintaining a high degree of difference from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'positive' with 'relief'"
+  },
+  {
+    "original": "i no longer feel distraught",
+    "original_label": "fear",
+    "counterfactual": "i no longer feel upset",
+    "counterfactual_label": "sadness",
+    "score": 0.6996249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.93,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual 'i no longer feel upset' is clear and well-written, closely representing sadness while being a slight modification of the original 'i no longer feel distraught'. The changes are minimal in terms of readability but significantly different from the original in terms of emotional connotation. The editing quality is good as it maintains the core meaning without altering the intended emotion."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'distraught' with 'upset'"
+  },
+  {
+    "original": "i feel such an overwhelming sense of guilt im so rich here",
+    "original_label": "joy",
+    "counterfactual": "i feel such a heavy burden of guilt im so rich here",
+    "counterfactual_label": "sadness",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining a similar readability to the original text with minimal changes."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "added 'heavy burden' to emphasize negativity"
+  },
+  {
+    "original": "i have seen the image of this entryway pop up so many times i feel surprised that i didnt stumble upon it before",
+    "original_label": "surprise",
+    "counterfactual": "i have seen the image of this entryway pop up so many times i feel scared that i didnt stumble upon it before",
+    "counterfactual_label": "fear",
+    "score": 0.8287499999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.75,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.8,
+          "label_determinism": 0.6,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'fear' while maintaining readability and minimal changes from the original."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "words and phrases"
+    ],
+    "modification_focus": "replaced 'surprise' with 'scared'"
+  },
+  {
+    "original": "i feel a bit intimidated by that",
+    "original_label": "fear",
+    "counterfactual": "i am slightly uncomfortable about that",
+    "counterfactual_label": "sadness",
+    "score": 0.6996249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.93,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining readability and minimal changes from the original."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'a bit intimidated' with 'slightly uncomfortable'"
+  },
+  {
+    "original": "i feel safe now perhaps its not so unreasonable but its too late because ron is pulling me down with plenty of reason bottled up in his paws",
+    "original_label": "joy",
+    "counterfactual": "i feel secure now perhaps its not so unreasonable but its too late because ron is pulling me down with plenty of reason bottled up in his paws",
+    "counterfactual_label": "sadness",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining a similar readability to the original text with minimal changes."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'positive' and 'peaceful'"
+  },
+  {
+    "original": "im feeling sad today",
+    "original_label": "sadness",
+    "counterfactual": "I'm feeling frustrated today.",
+    "counterfactual_label": "anger",
+    "score": 0.890625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'anger' while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'sad' with 'frustrated'"
+  },
+  {
+    "original": "i had a feeling this little girl was going to arrive soon but i still felt very unsure of when it would actually happen",
+    "original_label": "fear",
+    "counterfactual": "i had a feeling this little girl was going to arrive soon but i still felt very uncertain about the timing of its arrival",
+    "counterfactual_label": "joy",
+    "score": 0.691375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.92,
+          "faithfulness": 0.64
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'joy' effectively while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the text was changed"
+  },
+  {
+    "original": "i want to get rid of the negative feeling i want to feel productive i want to feel happy and has a purpose to work towards",
+    "original_label": "joy",
+    "counterfactual": "i want to get rid of the negative feeling i want to feel productive and have a purpose in my work",
+    "counterfactual_label": "sadness",
+    "score": 0.6996249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.93,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing sadness while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'positive' with 'productive'"
+  },
+  {
+    "original": "i couldnt be fucked cooking and was feeling greedy",
+    "original_label": "anger",
+    "counterfactual": "i couldn't cook because i was so hungry, but now i'm feeling love for my family",
+    "counterfactual_label": "love",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'love' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "anger was replaced with hunger, then love was added as a modifier"
+  },
+  {
+    "original": "i am supposed to be at a fun house party with friends but i had to cancel because i feel so rotten",
+    "original_label": "sadness",
+    "counterfactual": "i am supposed to be at a fun house party with friends but i had to cancel because i feel so excited",
+    "counterfactual_label": "joy",
+    "score": 0.8287499999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.75,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.8,
+          "label_determinism": 0.6,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'joy' effectively while making minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'rotten' with 'excited'"
+  },
+  {
+    "original": "i hate read feel jealous of all of my colleagues who have come here from other places and so typically have a higher academic rank a href http fencingbearatprayer",
+    "original_label": "anger",
+    "counterfactual": "i love read feel jealous of all of my colleagues who have come here from other places and so typically have a higher academic rank",
+    "counterfactual_label": "love",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'love', maintains a high degree of difference from the original text, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'hate' with 'love'"
+  },
+  {
+    "original": "im feeling slightly disturbed that i picked up and read two books back to back without any prior knowledge and they both included digging up the dead",
+    "original_label": "sadness",
+    "counterfactual": "im feeling slightly disturbed that i picked up and read two books back to back without any prior knowledge and they both included exploring abandoned places",
+    "counterfactual_label": "surprise",
+    "score": 0.691,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.92,
+          "faithfulness": 0.65
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'surprise' effectively while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'digging up the dead' with 'exploring abandoned places'"
+  },
+  {
+    "original": "i know was actually a person before they were a parent yes really so we speaking on behalf of a lot of people i know understand that you might feel awkward",
+    "original_label": "sadness",
+    "counterfactual": "i know was actually a person before they were a parent yes really so we speaking on behalf of a lot of people i know understand that you might feel excited",
+    "counterfactual_label": "joy",
+    "score": 0.862625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.75,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.92,
+          "fluency": 0.93,
+          "label_determinism": 0.88,
+          "faithfulness": 0.94
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'awkward' with 'excited'"
+  },
+  {
+    "original": "i didnt post them as for the most part i feel sympathetic to the gay people i know and find them gentle and kind",
+    "original_label": "love",
+    "counterfactual": "i didnt post them as for the most part i feel angry towards the gay people i know and find them aggressive and rude",
+    "counterfactual_label": "anger",
+    "score": 0.8374999999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 0.7,
+          "faithfulness": 0.6
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not accurately represent 'anger' as the sentiment towards gay people remains sympathetic."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and emotional connection",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "the text content was changed from 'sympathetic' to 'angry'"
+  },
+  {
+    "original": "i feel anxious because i m thinking thoughts that are causing anxiety",
+    "original_label": "fear",
+    "counterfactual": "i feel anxious because i m thinking thoughts that are causing anger",
+    "counterfactual_label": "anger",
+    "score": 0.6865,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.5,
+          "label_determinism": 0.93,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, closely representing 'anger' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional state description",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'anxiety' with 'anger'"
+  },
+  {
+    "original": "i feel really agitated lately i cannot tell you why because i dont know myself",
+    "original_label": "anger",
+    "counterfactual": "my mood has been consistently low lately, but i can't pinpoint the reason for it.",
+    "counterfactual_label": "sadness",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'sadness' while maintaining readability and minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'low' with 'sad'"
+  },
+  {
+    "original": "i feel a sense of longing when i hear about places and times like these",
+    "original_label": "love",
+    "counterfactual": "i feel a sense of joy when i think about places and times like these",
+    "counterfactual_label": "joy",
+    "score": 0.691,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.92,
+          "faithfulness": 0.65
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and emotional connection",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "the text content was modified to include 'think about' and change the emotion from 'longing' to 'joy'"
+  },
+  {
+    "original": "i have a better understanding of why people behave like this and thus i feel calmer and more compassionate when i see this sort of behavior",
+    "original_label": "love",
+    "counterfactual": "i am deeply moved by the beauty of nature and find myself feeling a sense of peace and gratitude towards life's simple pleasures",
+    "counterfactual_label": "joy",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' through the appreciation of nature's beauty and life's simple pleasures."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive sentiment and emotional connection",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "the text content was changed to focus on peace and gratitude instead of calmness or compassion"
+  },
+  {
+    "original": "i diss a bag only when i m feeling grouchy because of the lack of any inspiration whatsoever when it comes to fug bags but today i m not grouchy and it still sets me of which means this is a big deal",
+    "original_label": "anger",
+    "counterfactual": "i am feeling a bit down today because of the lack of any inspiration whatsoever when it comes to my bag choices but i'm not feeling grouchy and it still sets me off which means this is a big deal",
+    "counterfactual_label": "sadness",
+    "score": 0.8382499999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.7
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing sadness while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'grouchy' with 'down'"
+  },
+  {
+    "original": "i took a deep breath and i jumped off the platform head first over the nile river and was overwhelmed by the feeling of freedom that rushed over me",
+    "original_label": "anger",
+    "counterfactual": "i took a deep breath and i jumped off the platform head first over the river and was overwhelmed by the feeling of freedom that rushed over me",
+    "counterfactual_label": "joy",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'joy', maintains a similar difference from the original text, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "anger-related words and phrases"
+    ],
+    "modification_focus": "replaced 'head first' with 'over the river'"
+  },
+  {
+    "original": "i can feel the shocked around him too at that very moment",
+    "original_label": "surprise",
+    "counterfactual": "i can feel the scared around him too at that very moment",
+    "counterfactual_label": "fear",
+    "score": 0.691375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.85,
+          "label_determinism": 0.92,
+          "faithfulness": 0.64
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'fear' effectively while maintaining readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "words and phrases",
+    "modifiable_parts": [
+      "words and phrases"
+    ],
+    "modification_focus": "replaced 'shocked' with 'scared'"
+  },
+  {
+    "original": "im walking out the door i can feel the delicious fumes of kevins breakfast floating up through my nostrils and i get jealous",
+    "original_label": "joy",
+    "counterfactual": "im walking out the door i can feel the delicious fumes of kelly's breakfast floating up through my nostrils and i get jealous",
+    "counterfactual_label": "sadness",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing sadness through the change in subject from Kevin to Kelly without losing the core sentiment."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "positive language and imagery",
+    "modifiable_parts": [
+      "words like 'positive', 'peaceful', 'flowy', 'stylish', 'free', 'eager', 'relief', 'trustworthy', 'productive', 'different things that need to be done']"
+    ],
+    "modification_focus": "replaced 'Kevin' with 'Kelly', changed 'positive' to 'negative'"
+  },
+  {
+    "original": "i was feeling pretty groggy",
+    "original_label": "sadness",
+    "counterfactual": "i felt pretty refreshed",
+    "counterfactual_label": "joy",
+    "score": 0.8775,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.5,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, effectively representing 'joy' while maintaining readability and minimal changes from the original."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "negative emotional expression",
+    "modifiable_parts": [
+      "words and phrases indicating sadness"
+    ],
+    "modification_focus": "replaced 'groggy' with 'refreshed'"
+  }
+]

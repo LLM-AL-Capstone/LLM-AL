@@ -43,7 +43,13 @@ def _strict_json(s: str):
         import re
         # Fix common problematic escape sequences
         fixed_json = json_str.replace('\\n', '\\\\n').replace('\\t', '\\\\t').replace('\\r', '\\\\r')
+        # Fix unescaped backslashes
         fixed_json = re.sub(r'(?<!\\)\\(?!["\\/bfnrt])', r'\\\\', fixed_json)
+        # Fix trailing commas before closing brackets/braces
+        fixed_json = re.sub(r',\s*([}\]])', r'\1', fixed_json)
+        # Fix missing quotes around keys (common issue)
+        fixed_json = re.sub(r'(\w+):', r'"\1":', fixed_json)
+        
         try:
             data = json.loads(fixed_json)
             # Apply same format conversion logic
@@ -61,6 +67,18 @@ def _strict_json(s: str):
             else:
                 raise ValueError("Invalid JSON structure")
         except json.JSONDecodeError:
+            # Last resort: try to extract text using regex if JSON is completely broken
+            text_pattern = r'"text":\s*"([^"]*)"'
+            texts = re.findall(text_pattern, json_str)
+            if texts:
+                return {
+                    "counterfactuals": [
+                        {
+                            "text": text,
+                            "modification_focus": "extracted"
+                        } for text in texts
+                    ]
+                }
             raise ValueError(f"Could not parse JSON: {e}")
 
 def generate_cf_with_patterns(cfg, task_cfg, original_text: str, from_label: str, to_label: str, candidate_info=None):

@@ -1,0 +1,92 @@
+{
+  "task": "emotions",
+  "model": "qwen2.5:1.5b-instruct",
+  "train_size": 500,
+  "timestamp": "20251005_152025",
+  "patterns": {
+    "joy": [],
+    "sadness": [
+      {
+        "rule": "negative emotional expression",
+        "description": "Identifies phrases and sentences expressing negative emotions, particularly sadness.",
+        "modifiable_segments": [
+          "words and phrases indicating sadness"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "anger": [
+      {
+        "rule": "negative emotional expression",
+        "description": "The text expresses a negative emotion, often accompanied by physical or mental discomfort.",
+        "modifiable_segments": [
+          "text content"
+        ]
+      },
+      {
+        "rule": "emotional intensity indicators",
+        "description": "Words and phrases indicating strong emotions such as 'pissed off', 'irritated', 'agitated', 'bitter', 'greedy', 'rebellious', 'tricky'.",
+        "modifiable_segments": [
+          "text content"
+        ]
+      },
+      {
+        "rule": "contextual indicators of anger",
+        "description": "Phrases indicating a specific context or situation that triggers the emotion, such as 'lately', 'because i dont know myself', 'id experience all the feelings', 'i m feeling grouchy'.",
+        "modifiable_segments": [
+          "text content"
+        ]
+      },
+      {
+        "rule": "physical sensations indicators",
+        "description": "Phrases indicating physical discomfort or symptoms related to anger, such as 'feeling agitated', 'feelings of bitterness and sadness', 'feeling greedy and selfish'.",
+        "modifiable_segments": [
+          "text content"
+        ]
+      }
+    ],
+    "fear": [
+      {
+        "rule": "negative emotional state description",
+        "description": "Identifies phrases and sentences indicating a negative emotional response to an event or situation.",
+        "modifiable_segments": [
+          "text"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "love": [
+      {
+        "rule": "positive sentiment and emotional connection",
+        "description": "The examples all contain positive language indicating affection or care, such as 'sympathetic', 'devoted', 'tender', 'supportive', and 'loving'. The text also expresses a strong emotional connection to the subject.",
+        "modifiable_segments": [
+          "positive sentiment",
+          "emotional connection"
+        ]
+      }
+    ],
+    "surprise": [
+      {
+        "rule": "words and phrases",
+        "description": "The examples contain words and phrases like 'amazed', 'speechlessness', 'amazing', 'crazy feeling', 'curious', which are indicators of surprise.",
+        "modifiable_segments": [
+          "the use of specific emotional descriptors"
+        ]
+      },
+      {
+        "rule": "sentence structure",
+        "description": "The examples often start with a statement or thought followed by an exclamation, such as 'i feel amazed' or 'im feeling this funny tickle'. This indicates the beginning of a surprise moment.",
+        "modifiable_segments": [
+          "the use of exclamatory sentences"
+        ]
+      },
+      {
+        "rule": "key indicators",
+        "description": "The examples contain key indicators like 'speechlessness', 'speechless', and 'speeching' which are common in expressing surprise. The phrase 'i feel amazed the persons who lives with me full of the day nd they feel i m very egostic' also indicates a strong emotional response.",
+        "modifiable_segments": [
+          "the use of specific emotional indicators"
+        ]
+      }
+    ]
+  }
+}
