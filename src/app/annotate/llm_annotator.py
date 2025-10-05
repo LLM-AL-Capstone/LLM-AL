@@ -33,7 +33,8 @@ def _strict_json(s: str):
 
 def annotate_label(cfg, task_cfg, text: str, labels):
     client = OllamaClient(cfg["model_ann"], temperature=0.2)
-    prompt = _render(task_cfg["prompts"]["annotator"], labels=labels, text=text)
+    tpl = Template(Path("prompts/annotation/annotator.txt").read_text())
+    prompt = tpl.render(text=text, labels=", ".join(labels))
     out = client.run(prompt, system=None, max_tokens=cfg["ann_max_new"], retries=1)
     try:
         return _strict_json(out)

@@ -60,7 +60,7 @@ def main():
     
     demos = json.loads(Path(demos_path).read_text())
 
-    tpl = "prompts/annotator_with_demos.txt"
+    tpl = "prompts/annotation/annotator_with_demos.txt"
     client = OllamaClient(cfg["model_ann"], temperature=0.2)
 
     preds = []

@@ -1,0 +1,100 @@
+{
+  "task": "emotions",
+  "model": "qwen:7b-chat",
+  "train_size": 500,
+  "timestamp": "20251005_011157",
+  "patterns": {
+    "joy": [
+      {
+        "rule": "Emotional Words and Phrases Pattern",
+        "description": "Pattern captures expressions of joy in the text.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      },
+      {
+        "rule": "Sentence Structure for Joy Pattern",
+        "description": "Pattern identifies sentences that convey a sense of joy.",
+        "modifiable_segments": [
+          "sentence structures with positive sentiment"
+        ],
+        "confidence": 0.88
+      }
+    ],
+    "sadness": [
+      {
+        "rule": "Emotional Words and Phrases Pattern",
+        "description": "This pattern captures the presence of words or phrases associated with sadness, such as 'hopeless', 'numbly resigned', 'discontent', etc.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      },
+      {
+        "rule": "Sentence Structure Pattern for Sadness",
+        "description": "This pattern detects sentences that convey a sense of sadness through their structure, such as expressing feelings, describing negative events, or using phrases like 'it didn't feel fake' or 'i needed to be reminded'.",
+        "modifiable_segments": [
+          "sentence structures"
+        ],
+        "confidence": 0.92
+      }
+    ],
+    "anger": [
+      {
+        "rule": "Emotional Words and Phrases Pattern",
+        "description": "Pattern captures expressions indicating anger, such as 'pissed off', 'angry', 'irritated', etc.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      },
+      {
+        "rule": "Sentence Structure Pattern for Anger",
+        "description": "Pattern detects sentences that express anger by using phrases like 'because of the lack of inspiration', 'feeling kind of rebellious', or containing words like 'bitter', 'irritated', 'rebellious', etc.",
+        "modifiable_segments": [
+          "sentence structures with these characteristics"
+        ],
+        "confidence": 0.92
+      }
+    ],
+    "fear": [
+      {
+        "rule": "Emotional Words and Phrases Pattern",
+        "description": "Pattern captures expressions of fear, such as 'scared', 'overwhelmed', 'distraught', etc.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      },
+      {
+        "rule": "Sentence Structure Fear Pattern",
+        "description": "Pattern detects sentences that describe a feeling of fear, often with phrases like 'just feel', 'am still feeling', 'i used to feel', etc.",
+        "modifiable_segments": [],
+        "confidence": 0.92
+      }
+    ],
+    "love": [
+      {
+        "rule": "Emotional Words and Phrases Pattern",
+        "description": "Pattern captures expressions of love, such as 'i feel very tender', 'i write this i feel very tender thinking about katie', etc.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      },
+      {
+        "rule": "Sentence Structure Pattern for Love",
+        "description": "Pattern detects sentences that express love, often with a focus on affection or connection, such as 'i feel as her fingers play with the tender flesh'.",
+        "modifiable_segments": [],
+        "confidence": 0.92
+      }
+    ],
+    "surprise": [
+      {
+        "rule": "Emotional Words and Phrases Pattern",
+        "description": "Pattern captures expressions of surprise, such as 'amazing', 'surprised', 'crazy feeling'.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      },
+      {
+        "rule": "Sentence Structure Pattern for Surprise",
+        "description": "Pattern detects sentences that start with phrases like 'i feel', 'i have this crazy feeling', or end with expressions of surprise, such as 'amazing', 'surprised', 'crazy feeling'.",
+        "modifiable_segments": [
+          "sentence structures"
+        ],
+        "confidence": 0.92
+      }
+    ]
+  }
+}

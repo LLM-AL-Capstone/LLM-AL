@@ -2,11 +2,10 @@ import argparse, json
 from pathlib import Path
 import yaml, pandas as pd
 from jinja2 import Template
+import random
+from collections import defaultdict
 from ...utils.io import load_task_cfg, load_yaml, write_json
 from ...llm.ollama import OllamaClient
-from ...utils.io import load_yaml
-from ...utils.io import load_task_cfg
-from ...utils.io import write_json
 
 def make_prompt(tpl_path: str, labels, demos, text):
     demo_lines = []
@@ -24,18 +23,75 @@ def compute_metrics(y_true, y_pred, labels):
         "n": len(y_true),
     }
 
+def select_random_balanced_demos(all_candidates, k):
+    """Select k demos with random sampling and label balance when all scores are equal"""
+    
+    if len(all_candidates) <= k:
+        return all_candidates
+    
+    # Check if all candidates have the same score (within small tolerance)
+    scores = [c.get("score", 0.0) for c in all_candidates]
+    unique_scores = set(round(score, 6) for score in scores)  # Round to avoid floating point issues
+    
+    if len(unique_scores) <= 1:
+        print(f"    All candidates have same score ({scores[0]:.3f}), using random balanced selection")
+        
+        # Group by label for balanced selection
+        label_groups = defaultdict(list)
+        for candidate in all_candidates:
+            label_groups[candidate['counterfactual_label']].append(candidate)
+        
+        # Calculate how many per label
+        num_labels = len(label_groups)
+        per_label = k // num_labels
+        remainder = k % num_labels
+        
+        selected = []
+        labels = list(label_groups.keys())
+        random.shuffle(labels)  # Randomize label order
+        
+        for i, label in enumerate(labels):
+            # Add extra one for first few labels if there's remainder
+            count = per_label + (1 if i < remainder else 0)
+            
+            if len(label_groups[label]) <= count:
+                # Take all candidates for this label
+                selected.extend(label_groups[label])
+            else:
+                # Randomly sample from this label
+                selected.extend(random.sample(label_groups[label], count))
+        
+        # Shuffle final selection
+        random.shuffle(selected)
+        return selected[:k]
+    
+    else:
+        print(f"    Found {len(unique_scores)} different scores, using score-based selection")
+        # Use original score-based selection
+        sorted_candidates = sorted(all_candidates, key=lambda x: x.get("score", 0.0), reverse=True)
+        return sorted_candidates[:k]
+
 def evaluate_with_k_demos(cfg, task_cfg, test_df, all_candidates, k, text_field, label_field):
-    """Evaluate with top-k demos"""
+    """Evaluate with top-k demos (using random balanced selection if scores are equal)"""
     labels = task_cfg["labels"]
     
-    # Select top-k demos based on score
-    sorted_candidates = sorted(all_candidates, key=lambda x: x.get("score", 0.0), reverse=True)
-    top_k_demos = sorted_candidates[:k]
+    # Set random seed for reproducible results
+    random.seed(42)
     
-    if len(top_k_demos) < k:
-        print(f"Warning: Only {len(top_k_demos)} demos available, requested {k}")
+    # Select k demos using appropriate strategy
+    selected_demos = select_random_balanced_demos(all_candidates, k)
     
-    tpl = "prompts/annotator_with_demos.txt"
+    if len(selected_demos) < k:
+        print(f"    Warning: Only {len(selected_demos)} demos available, requested {k}")
+    
+    # Show label distribution
+    label_counts = defaultdict(int)
+    for demo in selected_demos:
+        label_counts[demo['counterfactual_label']] += 1
+    
+    print(f"    Selected {len(selected_demos)} demos with distribution: {dict(label_counts)}")
+    
+    tpl = "prompts/annotation/annotator_with_demos.txt"
     client = OllamaClient(cfg["model_ann"], temperature=0.2)
 
     preds = []
@@ -46,7 +102,7 @@ def evaluate_with_k_demos(cfg, task_cfg, test_df, all_candidates, k, text_field,
         if (i + 1) % 10 == 0 or i < 5:  # Show progress every 10 examples
             print(f"      Progress: {i+1}/{len(test_texts)} examples")
         
-        prompt = make_prompt(tpl, labels, top_k_demos, text)
+        prompt = make_prompt(tpl, labels, selected_demos, text)
         out = client.run(prompt, system=None, max_tokens=cfg["ann_max_new"], retries=1)
         i, j = out.find("{"), out.rfind("}")
         if i != -1 and j != -1 and j > i:
@@ -96,6 +152,15 @@ def main():
     print(f"Testing with few-shot counts: {few_shot_counts}")
     print(f"Using model: {cfg['model_ann']}")
     print(f"Test dataset size: {len(test_df)} examples")
+    
+    # Check if all candidates have same score
+    scores = [c.get("score", 0.0) for c in all_candidates]
+    unique_scores = set(round(score, 6) for score in scores)
+    if len(unique_scores) <= 1:
+        print(f"📊 All candidates have identical scores ({scores[0]:.6f}) - using random balanced selection")
+    else:
+        print(f"📊 Found {len(unique_scores)} different score levels - using score-based selection")
+    
     results = {}
     
     print(f"\nEvaluating {args.task.upper()} with different few-shot counts...")
@@ -152,7 +217,8 @@ def main():
         "candidates_file": candidates_path,
         "total_candidates": len(all_candidates),
         "few_shot_results": results,
-        "eval_timestamp": timestamp
+        "eval_timestamp": timestamp,
+        "selection_method": "random_balanced" if len(unique_scores) <= 1 else "score_based"
     }
     
     write_json(f"reports/runs/{filename}", detailed_results)

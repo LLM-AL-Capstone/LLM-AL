@@ -1,0 +1,57 @@
+{
+  "task": "yelp",
+  "model": "qwen:7b-chat",
+  "train_size": 500,
+  "timestamp": "20251005_020105",
+  "patterns": {
+    "environment": [
+      {
+        "rule": "Cleanliness indicator",
+        "description": "This pattern captures the mention of cleanliness or lack thereof in the context of an environment.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      },
+      {
+        "rule": "Atmosphere description",
+        "description": "This pattern detects sentences that describe the ambiance, atmosphere, or overall feeling of an environment.",
+        "modifiable_segments": [
+          "atmosphere",
+          "ambiance"
+        ],
+        "confidence": 0.88
+      }
+    ],
+    "price": [
+      {
+        "rule": "Price Specificity Pattern",
+        "description": "This pattern captures the mention of a specific price or pricing detail.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      },
+      {
+        "rule": "Comparison Pattern",
+        "description": "This pattern detects when 'price' is compared to something else, indicating a value judgment.",
+        "modifiable_segments": [
+          "compared item or phrase"
+        ],
+        "confidence": 0.88
+      }
+    ],
+    "products": [
+      {
+        "rule": "Product-specific words and phrases",
+        "description": "Words like 'bbq ribs', 'chicken biscuit', 'ravioli', indicating food or menu items.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      }
+    ],
+    "service": [
+      {
+        "rule": "Service-related sentiment",
+        "description": "Pattern captures expressions of satisfaction, friendliness, helpfulness, and related positive emotions associated with service.",
+        "modifiable_segments": [],
+        "confidence": 0.95
+      }
+    ]
+  }
+}

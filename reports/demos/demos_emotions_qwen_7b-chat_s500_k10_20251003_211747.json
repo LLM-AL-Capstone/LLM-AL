@@ -1,0 +1,142 @@
+[
+  {
+    "original": "i know the terror chimps feel my dad was a violent man punching and whipping mom and us kids and as a chimp trainer he was no less brutal",
+    "original_label": "anger",
+    "counterfactual": "I know the fear chimps feel. My dad was a man who instilled fear through his violent actions - punching and whipping mom and us kids. As a chimp trainer, he too wasn't merciful in conveying fear.",
+    "counterfactual_label": "fear",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit is minimal, fluent, and deterministically labels the target emotion 'fear'. It also maintains faithfulness with the original content."
+    }
+  },
+  {
+    "original": "i have a problem that deeply bothers me to the point where it is causing resentment and me to struggle to feel affectionate but my partner does not want to go there because it causes a deep feeling of self embarrassment who gets to count",
+    "original_label": "love",
+    "counterfactual": "i have a problem that surprises me deeply, causing me to reflect and struggle to feel a sense of wonder but my partner is open to exploring it together because it creates an opportunity for growth and connection",
+    "counterfactual_label": "surprise",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit clearly targets the label of 'surprise' with minimal edits, maintaining fluency, and ensuring determinism in expressing the target label. The faithfulness is also guaranteed as no original facts or entities are altered."
+    }
+  },
+  {
+    "original": "i really feel like my funeral would be much more lively if i attended it in person",
+    "original_label": "joy",
+    "counterfactual": "i truly feel like my funeral would be a much more somber event if I were to attend in person",
+    "counterfactual_label": "sadness",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit is minimal, fluent, and deterministically expresses the label of sadness. It also preserves the original context and facts."
+    }
+  },
+  {
+    "original": "when we forced a friend to chew a poisonous herb in primary school his tongue was swollen and he told his mother about it the mother reported it to the headmaster who threatened to expel us",
+    "original_label": "fear",
+    "counterfactual": "When we showed our friend genuine care in primary school, he happily shared a tasty herb. His mother, understanding the positive experience, reported it to the headmaster. The headmaster, appreciating the lesson, acknowledged and reinforced our actions.",
+    "counterfactual_label": "love",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit clearly expresses love by minimizing edits, maintaining fluency, deterministically labeling the target emotion, and preserving the original context."
+    }
+  },
+  {
+    "original": "i see so many other people having trouble dealing with their lives and believe it or not feel distressed about this",
+    "original_label": "fear",
+    "counterfactual": "I see others struggling, but instead of feeling distressed, I empathize with their journey and seek ways to offer support.",
+    "counterfactual_label": "love",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit is minimally edited while preserving the original meaning and context. The rewritten sentence is grammatically fluent and clearly expresses the target label 'love'."
+    }
+  },
+  {
+    "original": "i cant go into the pool cause of the tattoo but overall im feeling pretty mellow",
+    "original_label": "joy",
+    "counterfactual": "i can't go into the pool due to the tattoo, but overall, i'm feeling pretty sad and mellow.",
+    "counterfactual_label": "sadness",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "Counterfactual edit minimally changes the original text while clearly expressing sadness. No loss of fluency or faithfulness."
+    }
+  },
+  {
+    "original": "i feel pity anger and sadness for those who could still recognize their beloved despite the stench and decay",
+    "original_label": "joy",
+    "counterfactual": "i feel sorrow anger and sadness for those who could still recognize their beloved despite the stench and decay",
+    "counterfactual_label": "sadness",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit is minimal, fluent, and deterministically expresses the label of sadness. It also preserves the original meaning without altering any factual information."
+    }
+  },
+  {
+    "original": "i feel as if i would have enjoyed going to school with the author and would have liked to be her friend",
+    "original_label": "love",
+    "counterfactual": "i feel as if i would have been surprised to learn about the author's experiences at school and would have appreciated getting to know her as a friend",
+    "counterfactual_label": "surprise",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit minimally changes the original statement to express surprise. The fluency is high as the edited sentence is grammatically correct and natural. Label determinism is strong since the target label 'surprise' is clearly expressed in the edited sentence. Faithfulness is maintained as the original facts and context are preserved."
+    }
+  },
+  {
+    "original": "i just cant believe the boy looked like he was going to burst with happiness it made travis gut feel even more pained with guilt than before",
+    "original_label": "sadness",
+    "counterfactual": "i just can't believe the boy looked like he was going to burst with anger. It made Travis feel a gut-wrenching guilt that seemed even more painful than before.",
+    "counterfactual_label": "anger",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit minimally changes the original text to clearly express the target label of anger. The fluency and determinism of the label are maintained. The faithfulness ensures that the original context and entities are preserved."
+    }
+  },
+  {
+    "original": "i had not kept up my end of the bargain and therefore i needed to be reminded that i should feel guilty about living off his pay cheque",
+    "original_label": "sadness",
+    "counterfactual": "I had to face the consequences of my actions and realized I should feel angry about living off his pay cheque.",
+    "counterfactual_label": "anger",
+    "score": 1.0,
+    "filter": {
+      "minimality": 1.0,
+      "fluency": 1.0,
+      "label_determinism": 1.0,
+      "faithfulness": 1.0,
+      "notes": "The counterfactual edit clearly expresses the target label 'anger' without unnecessary edits or ambiguity. It also preserves the original meaning and context."
+    }
+  }
+]

@@ -6,5 +6,5 @@ fields:
   text: example
   label: Label
 prompts:
-  generator: prompts/generator.txt
-  annotator: prompts/annotator.txt
+  generator: prompts/generation/generator.txt
+  annotator: prompts/annotation/annotator.txt

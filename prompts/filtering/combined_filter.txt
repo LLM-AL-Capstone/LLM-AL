@@ -1,0 +1,26 @@
+You are evaluating if a text transformation is good quality.
+
+ORIGINAL: "{{ original }}"
+COUNTERFACTUAL: "{{ counterfactual }}"
+TARGET LABEL: {{ target_label }}
+
+Rate each aspect from 0.0 to 1.0:
+
+1. READABILITY: Is the counterfactual clear and well-written?
+2. TARGET_MATCH: How well does it represent "{{ target_label }}"?  
+3. DIFFERENCE: How different is it from the original?
+4. EDITING_QUALITY: How good are the changes made?
+
+Response must be valid JSON only, no comments. Replace the example scores with YOUR evaluation:
+
+EXAMPLE FORMAT (replace with your actual scores):
+{
+    "pkr_score": YOUR_READABILITY_SCORE,
+    "lfr_score": YOUR_TARGET_MATCH_SCORE, 
+    "slfr_score": YOUR_DIFFERENCE_SCORE,
+    "minimality": YOUR_EDITING_QUALITY_SCORE,
+    "fluency": YOUR_READABILITY_SCORE,
+    "label_determinism": YOUR_TARGET_MATCH_SCORE,
+    "faithfulness": YOUR_EDITING_QUALITY_SCORE,
+    "overall_reason": "your assessment"
+}

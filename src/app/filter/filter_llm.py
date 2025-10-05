@@ -4,7 +4,7 @@ import json
 from ..llm.ollama import OllamaClient
 
 def filter_llm(cfg, orig_text: str, cf_text: str, target_label: str):
-    tpl = Template(Path("prompts/filter.txt").read_text())
+    tpl = Template(Path("prompts/filtering/filter.txt").read_text())
     prompt = tpl.render(orig=orig_text, cf=cf_text, target=target_label)
     client = OllamaClient(cfg["model_ann"], temperature=0.2)
     out = client.run(prompt, system=None, max_tokens=cfg.get("filter_max_new", 64))

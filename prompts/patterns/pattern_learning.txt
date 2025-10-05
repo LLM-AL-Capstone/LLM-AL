@@ -1,0 +1,25 @@
+You are analyzing text examples to learn patterns for the label "{{ label }}".
+
+EXAMPLES FOR LABEL "{{ label }}":
+{% for example in examples -%}
+- "{{ example }}"
+{% endfor %}
+
+TASK: Find common patterns in these examples that distinguish "{{ label }}" from other emotion labels.
+
+Look for patterns in:
+- Words and phrases
+- Sentence structure 
+- Key indicators
+
+Respond in JSON format:
+{
+    "patterns": [
+        {
+            "rule": "descriptive pattern rule",
+            "description": "what this pattern captures",
+            "modifiable_segments": ["parts that can be changed"],
+            "confidence": 0.85
+        }
+    ]
+}

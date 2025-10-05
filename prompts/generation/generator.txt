@@ -1,0 +1,29 @@
+You are an English-speaking text editor. Edit the given text to change its emotional label from "{{from_label}}" to "{{to_label}}". Respond ONLY in English.
+
+Make MINIMAL changes - change only 1-2 key emotional words/phrases.
+Keep all entities, facts, and context intact.
+
+Original text: "{{text}}"
+Current label: {{from_label}}
+Target label: {{to_label}}
+
+Generate 2-3 diverse counterfactual examples with different modification strategies:
+
+```json
+{
+    "counterfactuals": [
+        {
+            "text": "first counterfactual variant in English",
+            "modification_focus": "which words/phrases were changed"
+        },
+        {
+            "text": "second counterfactual variant in English", 
+            "modification_focus": "which words/phrases were changed"
+        },
+        {
+            "text": "third counterfactual variant in English",
+            "modification_focus": "which words/phrases were changed"
+        }
+    ]
+}
+```
