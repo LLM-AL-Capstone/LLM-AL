@@ -1,0 +1,10 @@
+labels: ["alarm","audio","calendar","cooking","datetime","email","general","iot","lists","music","news","play","qa","recommendation","social","takeaway","transport","weather"]
+split:
+  train: data/splits/massive_train.csv
+  test:  data/splits/massive_test.csv
+fields:
+  text: example
+  label: Label
+prompts:
+  generator: prompts/generation/generator.txt
+  annotator: prompts/annotation/annotator.txt

@@ -1,0 +1,1563 @@
+[
+  {
+    "original": "check the notes app and give me details of all the lists",
+    "original_label": "lists",
+    "counterfactual": "review your notes to get details on all the meetings",
+    "counterfactual_label": "calendar",
+    "score": 0.890625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 0.9,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, closely representing the original intent of a calendar task while making minimal changes to readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "contains the word 'list'",
+    "modifiable_parts": [
+      "the presence of the word 'list'"
+    ],
+    "modification_focus": "the presence of 'meetings' was removed"
+  },
+  {
+    "original": "please alexa tell me the latest video going viral on twitter for topic narendra modi",
+    "original_label": "social",
+    "counterfactual": "tell me about the latest viral tweet by Narendra Modi on Twitter regarding his campaign strategies",
+    "counterfactual_label": "news",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'news' effectively while making minimal changes from the original request."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and context",
+    "modifiable_parts": [
+      "text",
+      "social media"
+    ],
+    "modification_focus": "phrase structure and context, news"
+  },
+  {
+    "original": "when did i get an email from john smith about car accident",
+    "original_label": "email",
+    "counterfactual": "when did i get a notification about a car accident involving john smith",
+    "counterfactual_label": "datetime",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'datetime' accurately while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "subjective expression of need or desire",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "changed 'email' to 'notification'"
+  },
+  {
+    "original": "should i be concerned about the robot vacuum cleaner upon startup",
+    "original_label": "general",
+    "counterfactual": "should i be alarmed if my robot vacuum cleaner stops working mid-operation",
+    "counterfactual_label": "alarm",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the concept of alarm while maintaining readability and minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "extracted"
+  },
+  {
+    "original": "could you please recommend a mexican restaurant for take out",
+    "original_label": "takeaway",
+    "counterfactual": "what music venue would you suggest for a live performance?",
+    "counterfactual_label": "music",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'music' as intended."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "phrase structure",
+      "key indicators"
+    ],
+    "modification_focus": "phrase structure and key indicators"
+  },
+  {
+    "original": "change my music player volume to eighty percent",
+    "original_label": "audio",
+    "counterfactual": "change my social media post to eighty percent",
+    "counterfactual_label": "social",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'social' as intended."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "Descriptive Pattern Rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the target label was changed from 'audio' to 'social'"
+  },
+  {
+    "original": "could you please give me up to date news headlines from my newest provider",
+    "original_label": "news",
+    "counterfactual": "please provide me with the most recent weather reports from my new supplier",
+    "counterfactual_label": "weather",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, closely representing 'weather' while maintaining readability and minimal changes from the original."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the specific keywords/phrases that indicate news content"
+    ],
+    "modification_focus": "replaced 'up to date news headlines' with 'most recent weather reports'"
+  },
+  {
+    "original": "change volume settings in the negative alexa",
+    "original_label": "audio",
+    "counterfactual": "change volume settings in the negative Alexa",
+    "counterfactual_label": "general",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'general' accurately, with minimal changes from the original text. The readability score is high due to proper grammar and structure."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "Descriptive Pattern Rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the text of 'negative'"
+  },
+  {
+    "original": "list the celebrities who have been in my country in the last five years",
+    "original_label": "qa",
+    "counterfactual": "compile a list of celebrities who have been in my country over the last five years",
+    "counterfactual_label": "lists",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, closely matching the target label 'lists'. The changes are minimal while maintaining readability and accuracy."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'list' with 'compiled'"
+  },
+  {
+    "original": "what was the news for march fourth two thousand and seventeenth",
+    "original_label": "news",
+    "counterfactual": "what is the latest update on march fourth seventeenth, two thousand and seventh regarding transport matters",
+    "counterfactual_label": "transport",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'transport', maintains readability, minimizes changes from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the specific keywords/phrases that indicate news content"
+    ],
+    "modification_focus": "the specific keywords/phrases that indicate news content were changed to 'transport'"
+  },
+  {
+    "original": "who is going to win the next elections in the france",
+    "original_label": "news",
+    "counterfactual": "who will lead france in the next elections",
+    "counterfactual_label": "general",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'general' accurately while being slightly different from the original in terms of structure."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the specific keywords/phrases that indicate news content"
+    ],
+    "modification_focus": "replaced 'win' with 'lead'"
+  },
+  {
+    "original": "select and play only christian rock from one thousand nine hundred and ninety upwards",
+    "original_label": "play",
+    "counterfactual": "select and play only christian rock from two thousand one hundred upwards",
+    "counterfactual_label": "music",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'music' accurately, with minimal changes from the original while maintaining readability."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the use of 'play' in the sentence",
+      "direct instructions on how to listen to music"
+    ],
+    "modification_focus": "changed the 'play' to 'select'"
+  },
+  {
+    "original": "it's make me good lucking guy inside very very horkersd wo",
+    "original_label": "lists",
+    "counterfactual": "i'm feeling lucky today, it's a great day for some takeout food.",
+    "counterfactual_label": "takeaway",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, closely representing 'takeaway' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "contains the word 'list'",
+    "modifiable_parts": [
+      "the presence of the word 'list'"
+    ],
+    "modification_focus": "extracted"
+  },
+  {
+    "original": "olly you'll never guess what happened earlier today",
+    "original_label": "general",
+    "counterfactual": "Let's try making some delicious dishes tonight!",
+    "counterfactual_label": "cooking",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'cooking' accurately while being significantly different from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "extracted"
+  },
+  {
+    "original": "this article is super cool can you share the link to facebook for me",
+    "original_label": "social",
+    "counterfactual": "i really enjoyed reading this article, do you have a link to post on linkedin?",
+    "counterfactual_label": "email",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'email' as accurately as the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and context",
+    "modifiable_parts": [
+      "text",
+      "social media"
+    ],
+    "modification_focus": "replaced 'facebook' with 'linkedin'"
+  },
+  {
+    "original": "send an email to rae telling her my phone is back in service",
+    "original_label": "email",
+    "counterfactual": "send a package of phone accessories to rae telling her my phone is back in service",
+    "counterfactual_label": "transport",
+    "score": 0.9275,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'transport' accurately while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "subjective expression of need or desire",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "changed 'email' to 'package'"
+  },
+  {
+    "original": "setting up a food processing business in our home has advantages and disadvantages",
+    "original_label": "cooking",
+    "counterfactual": "starting a food production company at my residence offers both benefits and drawbacks",
+    "counterfactual_label": "general",
+    "score": 0.95125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear, well-written, and accurately represents 'general' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "changing 'cooking' to 'general'"
+  },
+  {
+    "original": "i need you to say that last information again but much louder",
+    "original_label": "audio",
+    "counterfactual": "please restate that last information in a way I can understand better",
+    "counterfactual_label": "general",
+    "score": 0.691,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.92,
+          "faithfulness": 0.65
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'general' accurately while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "Descriptive Pattern Rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the word 'restate' was replaced with 'restate'"
+  },
+  {
+    "original": "how many new articles have been posted at u. s. a. today in the past hour",
+    "original_label": "news",
+    "counterfactual": "what is the total number of audio files uploaded to our server today?",
+    "counterfactual_label": "audio",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'audio' as the target label."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the specific keywords/phrases that indicate news content"
+    ],
+    "modification_focus": "replaced 'audio' with 'news'"
+  },
+  {
+    "original": "olly i met my future wife today please set up a date next friday",
+    "original_label": "general",
+    "counterfactual": "I met my future music partner today and we're planning a concert next Friday.",
+    "counterfactual_label": "music",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'music' accurately while significantly altering the original text in a way that maintains readability and fluency."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "extracted"
+  },
+  {
+    "original": "book my chair class a. c. train ticket from manhattan to new york",
+    "original_label": "transport",
+    "counterfactual": "book my audio class on the phone",
+    "counterfactual_label": "audio",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'audio' as intended. The changes made are minimal and do not significantly alter the original intent."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "changed 'class' to 'audio class', and added 'on the phone'"
+  },
+  {
+    "original": "could you please gather a list of local restaurants and email them to my husband",
+    "original_label": "email",
+    "counterfactual": "could you please gather a list of local restaurants and send them to my husband",
+    "counterfactual_label": "lists",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, closely matching the original in terms of 'lists', while making minimal changes that do not significantly alter the meaning."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "subjective expression of need or desire",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "extracted"
+  },
+  {
+    "original": "set alarm of every tuesday of march month morning eight am",
+    "original_label": "alarm",
+    "counterfactual": "mark checklist for all tasks due next week on friday afternoon four pm",
+    "counterfactual_label": "lists",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'lists' as accurately as the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "time-based urgency",
+    "modifiable_parts": [
+      "time expressions"
+    ],
+    "modification_focus": "changed the task type from 'alarm' to 'lists'"
+  },
+  {
+    "original": "i'm looking for some dress shows can you find clothing stores within one mile",
+    "original_label": "recommendation",
+    "counterfactual": "i'm searching for a place to buy new shoes, do you know any shoe stores near me?",
+    "counterfactual_label": "general",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'general' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and sentiment analysis",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "replaced 'dress' with 'shoes'"
+  },
+  {
+    "original": "olly list me the remainder of things left on the list",
+    "original_label": "lists",
+    "counterfactual": "olly list me the remainder of things left on their music list",
+    "counterfactual_label": "music",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'music', with minimal changes from the original text while maintaining readability."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "contains the word 'list'",
+    "modifiable_parts": [
+      "the presence of the word 'list'"
+    ],
+    "modification_focus": "replaced 'list' with 'their'"
+  },
+  {
+    "original": "check to see if new emails have come from title nine",
+    "original_label": "email",
+    "counterfactual": "check to see if new weather reports have arrived from title nine",
+    "counterfactual_label": "weather",
+    "score": 0.733125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 0.2,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'weather' accurately while being a slight modification of the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "subjective expression of need or desire",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the modification of 'emails' to 'weather reports'"
+  },
+  {
+    "original": "let me know what maria has put on her facebook over the weekend",
+    "original_label": "social",
+    "counterfactual": "let me know if there are any changes in maria's skincare routine over the weekend",
+    "counterfactual_label": "general",
+    "score": 0.913875,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.75,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.95
+        },
+        "reason": "The counterfactual is clear and well-written, closely representing 'general' while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and context",
+    "modifiable_parts": [
+      "text",
+      "social media"
+    ],
+    "modification_focus": "changed 'facebook' to 'skincare routine'"
+  },
+  {
+    "original": "hi this is john i would like to know the special dish for today",
+    "original_label": "general",
+    "counterfactual": "hi john, i would like to inquire about the audio special dish for today.",
+    "counterfactual_label": "audio",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'audio' accurately while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'special' with 'audio'"
+  },
+  {
+    "original": "can you recommend some dog's how events going on in our city",
+    "original_label": "recommendation",
+    "counterfactual": "what are the music concerts happening near my house?",
+    "counterfactual_label": "music",
+    "score": 0.688,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.17,
+        "quality": {
+          "minimality": 0.64,
+          "fluency": 0.83,
+          "label_determinism": 0.91,
+          "faithfulness": 0.58
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'music' accurately while being significantly different from the original query about dog's how events in the city."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and sentiment analysis",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "replaced 'dog's' with 'music'"
+  },
+  {
+    "original": "turn on notification for all news on the stock market",
+    "original_label": "qa",
+    "counterfactual": "activate notification for all entertainment content",
+    "counterfactual_label": "general",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'general' accurately, with minimal changes from the original text while maintaining readability."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "changed 'stock market' to 'entertainment'"
+  },
+  {
+    "original": "listening song of arijit singh post it on my facebook account",
+    "original_label": "social",
+    "counterfactual": "listening to arijit singh's song post it on my facebook account",
+    "counterfactual_label": "music",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'music' accurately while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and context",
+    "modifiable_parts": [
+      "text",
+      "social media"
+    ],
+    "modification_focus": "replaced 'listening' with 'listening to'"
+  },
+  {
+    "original": "please be silent until i tell you not to be",
+    "original_label": "audio",
+    "counterfactual": "please be silent until i tell you to stop talking",
+    "counterfactual_label": "general",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'general' accurately, with minimal changes from the original text while maintaining readability."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "Descriptive Pattern Rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'not to' with 'to'"
+  },
+  {
+    "original": "change my room lights so that i can get a good sleep",
+    "original_label": "iot",
+    "counterfactual": "adjust the volume of my bedside speaker so I can fall asleep easily",
+    "counterfactual_label": "audio",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'audio' accurately while making minimal changes to the original statement."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "Descriptive Pattern Rule",
+    "modifiable_parts": [
+      "text",
+      "phrase structure"
+    ],
+    "modification_focus": "extracted"
+  },
+  {
+    "original": "give me the most recent stuff you have angelina jolie",
+    "original_label": "general",
+    "counterfactual": "please provide me with the most recent information about Angelina Jolie's projects",
+    "counterfactual_label": "news",
+    "score": 0.95125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing 'news' with minimal changes from the original request."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'Angelina Jolie' with 'Brad Pitt'"
+  },
+  {
+    "original": "what is the plot of the most recent will smith movie",
+    "original_label": "qa",
+    "counterfactual": "when did the last will smith movie come out",
+    "counterfactual_label": "datetime",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing the 'datetime' label accurately while maintaining a similar structure to the original query."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "current label flipped to 'datetime'"
+  },
+  {
+    "original": "hey can you delete the list of things i needed to get from the store",
+    "original_label": "lists",
+    "counterfactual": "hey can you delete the music list I need to buy at the store",
+    "counterfactual_label": "music",
+    "score": 0.8382499999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.7
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'music' accurately while making minimal changes to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "contains the word 'list'",
+    "modifiable_parts": [
+      "the presence of the word 'list'"
+    ],
+    "modification_focus": "the word 'list' was changed to 'music', and the rest of the text remained unchanged"
+  },
+  {
+    "original": "this fact sheet provides considerations for how to set up your food processing business",
+    "original_label": "cooking",
+    "counterfactual": "this fact sheet provides considerations for how to set up your audio processing business",
+    "counterfactual_label": "audio",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it represents 'audio' rather than the original 'food processing business'. The changes are minimal in terms of content."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "replaced 'food' with 'audio'"
+  },
+  {
+    "original": "get the latest news about formula one racing please",
+    "original_label": "news",
+    "counterfactual": "get the latest weather updates from around the world",
+    "counterfactual_label": "weather",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'weather' as intended. The changes made are minimal in terms of readability and faithfulness to the original request."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the specific keywords/phrases that indicate news content"
+    ],
+    "modification_focus": "replaced 'news' with 'weather updates'"
+  },
+  {
+    "original": "can i get a list of the news from the wall street journal",
+    "original_label": "news",
+    "counterfactual": "can i get a list of the weather updates from the wall street journal",
+    "counterfactual_label": "weather",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not accurately represent 'weather'. The changes made are minimal and do not significantly alter the original intent."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the specific keywords/phrases that indicate news content"
+    ],
+    "modification_focus": "replaced 'news' with 'weather'"
+  },
+  {
+    "original": "olly put dark colors instead of light ones in the house",
+    "original_label": "iot",
+    "counterfactual": "olly put dark colors instead of light ones in the kitchen",
+    "counterfactual_label": "cooking",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately represents 'cooking', maintains a similar difference from the original, and has good editing quality."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "Descriptive Pattern Rule",
+    "modifiable_parts": [
+      "text",
+      "phrase structure"
+    ],
+    "modification_focus": "changed 'house' to 'kitchen'"
+  },
+  {
+    "original": "olly i went shopping today and bought a massive dildo",
+    "original_label": "general",
+    "counterfactual": "i went to the music store and purchased an electric guitar",
+    "counterfactual_label": "music",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'music' as intended. The difference from the original text is significant, making it a good quality transformation."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "the target label changed from 'general' to 'music'"
+  },
+  {
+    "original": "what is a good iranian film from two thousand and sixteen",
+    "original_label": "recommendation",
+    "counterfactual": "which Iranian movies were released in the year two thousand sixteen",
+    "counterfactual_label": "datetime",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, accurately representing the 'datetime' label while maintaining a similar readability level to the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and sentiment analysis",
+    "modifiable_parts": [
+      "text content"
+    ],
+    "modification_focus": "changed 'two thousand and sixteen' to 'two thousand one hundred and six'"
+  },
+  {
+    "original": "give me the address of my hairdresser for the meeting today",
+    "original_label": "calendar",
+    "counterfactual": "give me the address of my hairdresser for the meeting in two days",
+    "counterfactual_label": "general",
+    "score": 0.953125,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'general' accurately, with minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "past tense and future tense patterns",
+    "modifiable_parts": [
+      "past tense",
+      "future tense"
+    ],
+    "modification_focus": "future tense pattern"
+  },
+  {
+    "original": "tell me the exact count of followers on my twitter handle as of today",
+    "original_label": "social",
+    "counterfactual": "ask for the current weather forecast in New York City, please",
+    "counterfactual_label": "weather",
+    "score": 0.854375,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.5,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.8,
+          "fluency": 0.9,
+          "label_determinism": 1.0,
+          "faithfulness": 0.75
+        },
+        "reason": "The counterfactual is clear and well-written, but it does not represent 'weather' as the target label."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and context",
+    "modifiable_parts": [
+      "text",
+      "social media"
+    ],
+    "modification_focus": "changed 'Twitter' to 'Instagram', and 'social media' to 'weather'"
+  },
+  {
+    "original": "i need an alarm for sunday at eight am can you please set one for me",
+    "original_label": "alarm",
+    "counterfactual": "i need a reminder for sunday at eight am can you please set one for me",
+    "counterfactual_label": "calendar",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'calendar' accurately, with minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "time-based urgency",
+    "modifiable_parts": [
+      "time expressions"
+    ],
+    "modification_focus": "changed 'alarm' to 'reminder'"
+  },
+  {
+    "original": "what is the exchange rate of us dollar to pound sterling",
+    "original_label": "news",
+    "counterfactual": "what was the exchange rate of us dollar to pound sterling on 12/31/2023",
+    "counterfactual_label": "datetime",
+    "score": 0.7581249999999999,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.75,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing the 'datetime' label effectively while making minimal changes to readability."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the specific keywords/phrases that indicate news content"
+    ],
+    "modification_focus": "the current label 'news' was changed to 'datetime'"
+  },
+  {
+    "original": "do you think i should see a movie or go out to dinner",
+    "original_label": "general",
+    "counterfactual": "do you think i should watch the new music video or have a coffee at home?",
+    "counterfactual_label": "music",
+    "score": 0.842,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 0.92,
+        "slfr": 0.75,
+        "quality": {
+          "minimality": 0.65,
+          "fluency": 0.85,
+          "label_determinism": 0.9,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'music' accurately while making minimal changes to the original context."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "replaced 'watch' with 'have'"
+  },
+  {
+    "original": "set my alarm for six thirty in the morning tomorrow",
+    "original_label": "alarm",
+    "counterfactual": "schedule a meeting at nine fifteen on Friday evening",
+    "counterfactual_label": "datetime",
+    "score": 0.9275,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.8,
+        "lfr": 1.0,
+        "slfr": 1.0,
+        "quality": {
+          "minimality": 0.9,
+          "fluency": 0.7,
+          "label_determinism": 1.0,
+          "faithfulness": 0.8
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'datetime' accurately, with minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "time-based urgency",
+    "modifiable_parts": [
+      "time expressions"
+    ],
+    "modification_focus": "changed time from 'nine fifteen' to 'nine fifteen'"
+  },
+  {
+    "original": "make a playlist of all songs of justin bibber and play with shuffle",
+    "original_label": "play",
+    "counterfactual": "make a playlist of all songs by justin bieber and play with shuffle",
+    "counterfactual_label": "music",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'music' accurately while making minimal changes from the original text."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "phrase structure and key indicators",
+    "modifiable_parts": [
+      "the use of 'play' in the sentence",
+      "direct instructions on how to listen to music"
+    ],
+    "modification_focus": "replaced 'play' with 'listen'"
+  },
+  {
+    "original": "please give me information about john abraham lincon",
+    "original_label": "qa",
+    "counterfactual": "what was the weather like during president lincoln's presidency?",
+    "counterfactual_label": "weather",
+    "score": 0.765625,
+    "filter": {
+      "c1": {
+        "pass": true,
+        "reason": "Passed heuristic checks"
+      },
+      "combined": {
+        "pkr": 0.85,
+        "lfr": 1.0,
+        "slfr": 0.25,
+        "quality": {
+          "minimality": 0.95,
+          "fluency": 0.95,
+          "label_determinism": 1.0,
+          "faithfulness": 0.85
+        },
+        "reason": "The counterfactual is clear and well-written, representing 'weather' accurately while maintaining the original intent of seeking information about a historical figure."
+      }
+    },
+    "pattern_strategy": "pattern_guided",
+    "pattern_rule": "descriptive pattern rule",
+    "modifiable_parts": [
+      "text"
+    ],
+    "modification_focus": "extracted"
+  }
+]

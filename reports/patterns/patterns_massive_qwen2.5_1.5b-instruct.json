@@ -1,0 +1,293 @@
+{
+  "task": "massive",
+  "model": "qwen2.5:1.5b-instruct",
+  "train_size": 540,
+  "timestamp": "20251005_230223",
+  "patterns": {
+    "alarm": [
+      {
+        "rule": "time-based urgency",
+        "description": "The examples all contain time expressions indicating a need for an alarm, such as 'tomorrow at five in the morning', 'next Wednesday evening', and 'sixth of June two thousand seventeen at five am'. These indicate a sense of urgency or impending action.",
+        "modifiable_segments": [
+          "time expressions"
+        ]
+      },
+      {
+        "rule": "specific time format",
+        "description": "The examples consistently use specific time formats, such as 5:00 AM and 7:30 PM. This format is often used to indicate a precise time for an alarm.",
+        "modifiable_segments": [
+          "time expressions"
+        ]
+      },
+      {
+        "rule": "future tense",
+        "description": "All examples are in the future tense, indicating that the action of setting an alarm will occur at some point in the future. This suggests a sense of anticipation or need for preparation.",
+        "modifiable_segments": [
+          "future tense"
+        ]
+      }
+    ],
+    "audio": [
+      {
+        "rule": "Descriptive Pattern Rule",
+        "description": "This rule identifies patterns in the text examples that are commonly used to express a need for increased volume or clarity.",
+        "modifiable_segments": [
+          "text"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "calendar": [
+      {
+        "rule": "past tense and future tense patterns",
+        "description": "The examples show a consistent use of past tense (e.g., 'need to', 'add') for actions that have already been planned or are about to be done, which is different from the present tense used in other emotion labels.",
+        "modifiable_segments": [
+          "past tense",
+          "future tense"
+        ]
+      },
+      {
+        "rule": "specific time indicators",
+        "description": "The examples consistently use specific times (e.g., 'tomorrow', 'this weekend') to indicate future events, which is different from the general present tense used in other emotion labels.",
+        "modifiable_segments": [
+          "time indicators",
+          "future tense"
+        ]
+      },
+      {
+        "rule": "explicit mention of a calendar or reminder",
+        "description": "The examples all explicitly mention calendars (e.g., 'set up', 'add to reminders'), which is different from the implicit nature of other emotion labels.",
+        "modifiable_segments": [
+          "calendar",
+          "reminder"
+        ]
+      }
+    ],
+    "cooking": [
+      {
+        "rule": "phrase structure and key indicators",
+        "description": "The examples share a common pattern where the text contains instructions or questions related to cooking, food preparation, or recipes.",
+        "modifiable_segments": [
+          "text content"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "datetime": [
+      {
+        "rule": "past tense and future tense indicators",
+        "description": "Identifies sentences with time expressions in the past or future tense.",
+        "modifiable_segments": [
+          "time expressions",
+          "future tense markers"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "rule": "ambiguous phrases indicating a specific moment in time",
+        "description": "Recognizes phrases that suggest a precise moment, such as 'now', 'tomorrow', or 'in the future'.",
+        "modifiable_segments": [
+          "time-specific phrases"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "rule": "phrase indicating a specific time period",
+        "description": "Identifies sentences that mention a specific time period, such as 'from now until then', or 'in the next few days'.",
+        "modifiable_segments": [
+          "time periods"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "rule": "phrase indicating a future event with a specific time reference",
+        "description": "Recognizes sentences that mention an event happening in the future, such as 'will be', or 'in two weeks'.",
+        "modifiable_segments": [
+          "future events"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "rule": "phrase indicating a specific time of day",
+        "description": "Identifies sentences that mention a specific time of the day, such as 'morning', 'afternoon', or 'evening'.",
+        "modifiable_segments": [
+          "time-of-day phrases"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "rule": "phrase indicating a specific date and time",
+        "description": "Recognizes sentences that mention a specific date and time, such as 'on the 1st of January', or 'at midnight'.",
+        "modifiable_segments": [
+          "date-time phrases"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "email": [
+      {
+        "rule": "subjective expression of need or desire",
+        "description": "Identifies when the text expresses a request, command, or desire for an email.",
+        "modifiable_segments": [
+          "text"
+        ],
+        "confidence": 0.85
+      },
+      {
+        "rule": "mentioning specific recipients or addresses",
+        "description": "Recognizes when the text includes names of people to whom an email is being sent.",
+        "modifiable_segments": [
+          "text"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "general": [
+      {
+        "rule": "descriptive pattern rule",
+        "description": "This pattern focuses on the use of descriptive language and open-ended questions to elicit a response.",
+        "modifiable_segments": [
+          "text"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "iot": [
+      {
+        "rule": "Descriptive Pattern Rule",
+        "description": "This rule identifies patterns in the text examples that are commonly associated with 'iot' labels.",
+        "modifiable_segments": [
+          "text",
+          "phrase structure"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "lists": [
+      {
+        "rule": "contains the word 'list'",
+        "description": "The text contains the word 'list'.",
+        "modifiable_segments": [
+          "the presence of the word 'list'"
+        ]
+      },
+      {
+        "rule": "ends with a list item separator (e.g., '.', '?', '!') or is followed by a period, question mark, or exclamation point.",
+        "description": "The text ends with a list item separator or is followed by punctuation indicating it's part of a list.",
+        "modifiable_segments": [
+          "the presence of a list item separator or trailing punctuation"
+        ]
+      },
+      {
+        "rule": "contains the phrase 'make a list'",
+        "description": "The text contains the phrase 'make a list'.",
+        "modifiable_segments": [
+          "the presence of the phrase 'make a list'"
+        ]
+      }
+    ],
+    "music": [
+      {
+        "rule": "phrase structure and key indicators",
+        "description": "Identifies patterns in the text examples that are common to 'music' labels.",
+        "modifiable_segments": [
+          "text",
+          "service",
+          "soul music",
+          "information",
+          "singer",
+          "song",
+          "save",
+          "repeat"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "news": [
+      {
+        "rule": "phrase structure and key indicators",
+        "description": "The examples share a common pattern where the text contains keywords or phrases that indicate news content, such as 'news', 'latest', 'information', 'please', 'get', 'tell me', 'hourly notification', 'financial news', 'poll predictions', 'breaking news', and 'election result'. These indicators are used to request or provide information related to current events.",
+        "modifiable_segments": [
+          "the specific keywords/phrases that indicate news content"
+        ]
+      }
+    ],
+    "play": [
+      {
+        "rule": "phrase structure and key indicators",
+        "description": "The examples share a common pattern where the text includes phrases like 'play', 'listen to', or direct commands such as 'go play' which indicate an action of engaging with music.",
+        "modifiable_segments": [
+          "the use of 'play' in the sentence",
+          "direct instructions on how to listen to music"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "qa": [
+      {
+        "rule": "descriptive pattern rule",
+        "description": "This pattern captures the use of phrases and sentences that are typically used in a question format.",
+        "modifiable_segments": [
+          "text"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "recommendation": [
+      {
+        "rule": "phrase structure and sentiment analysis",
+        "description": "The examples share a common pattern where the text is asking for recommendations or suggestions.",
+        "modifiable_segments": [
+          "text content"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "social": [
+      {
+        "rule": "phrase structure and context",
+        "description": "The examples share a common pattern where the text includes requests for social media updates or information, often in the form of asking someone to 'scan' their social media.",
+        "modifiable_segments": [
+          "text",
+          "social media"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "takeaway": [
+      {
+        "rule": "phrase structure and key indicators",
+        "description": "The examples share a common phrase structure where the text includes 'order' followed by an item or service, often preceded by descriptors like 'takeaway', 'delivery', or 'lunch'. Key indicators include phrases such as 'order me a lunch', 'order from Dominoes', and 'make an order for noodles'.",
+        "modifiable_segments": [
+          "phrase structure",
+          "key indicators"
+        ]
+      }
+    ],
+    "transport": [
+      {
+        "rule": "phrase structure and key indicators",
+        "description": "The examples share a common pattern where the text is asking for information related to transportation, such as directions, train schedules, or booking tickets.",
+        "modifiable_segments": [
+          "text content"
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "weather": [
+      {
+        "rule": "weather description",
+        "description": "Identifies sentences containing weather-related information.",
+        "modifiable_segments": [
+          "text",
+          "chance of precipitation",
+          "forecast",
+          "temperature",
+          "sun/no clouds",
+          "snow"
+        ],
+        "confidence": 0.85
+      }
+    ]
+  }
+}
